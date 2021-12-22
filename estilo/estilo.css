@@ -40,6 +40,11 @@
         color: black;
         margin: 1rem;
         padding: 1rem;
+        transition: all 2s ease;
+    }
+    
+    .logo:hover {
+        transform: scale(1.1, 1.1)
     }
     
     .menu {
@@ -57,6 +62,11 @@
     .listmenu li {
         margin: 1rem;
         padding: 1rem;
+        transition: all 2s ease;
+    }
+    
+    .listmenu li:hover {
+        transform: scale(1.1, 1.1)
     }
     
     .listmenu li a {
