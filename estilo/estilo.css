@@ -1,0 +1,377 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /*Comienza index.html*/
+    
+    body {
+        font-family: 'Outfit', sans-serif;
+        background-color: white;
+    }
+    
+    .contenedorindex {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "header" "media" "footer";
+    }
+    
+    .headerindex {
+        grid-area: header;
+    }
+    
+    header {
+        background-color: white;
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .menu {
+        background-color: white;
+        color: black;
+    }
+    
+    .listmenu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .listmenu li {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .listmenu li a {
+        color: black;
+        padding: 1rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+    
+    .mainindex {
+        grid-area: media;
+    }
+    
+    .hotblaze {
+        width: 100%;
+    }
+    
+    .inicioproductos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .top {
+        background-color: white;
+        color: black;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .top h1 {
+        padding: 1rem;
+        margin: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .newseanson {
+        background-color: white;
+        color: black;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .newseanson h1 {
+        padding: 1rem;
+        margin: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .llegada {
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .titulo {
+        padding: 1rem;
+        margin: 1rem;
+        text-transform: uppercase;
+    }
+    
+    .spotify {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .selfie {
+        width: 100%;
+    }
+    
+    .email {
+        background-color: #e6e6e6;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem;
+        margin: 2rem 0 2rem 0;
+    }
+    
+    .intro {
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    
+    .emailRellenar {
+        font-size: 1rem;
+        width: 20rem;
+        margin: 1rem;
+        padding: 1rem;
+        border: solid #c4c4c4;
+        color: #333;
+        background-color: white;
+        font-weight: bold;
+    }
+    
+    .emailEnviar {
+        background-color: black;
+        color: white;
+        margin: 1rem;
+        padding: 0 2rem 0 2rem;
+        border: solid transparent;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 3rem;
+    }
+    
+    footer {
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .footerindex h2 {
+        font-size: 2rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .pagoycontacto {
+        padding: 1rem 0 2rem 0;
+        font-weight: bolder;
+    }
+    
+    .pagoycontacto ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .pagoycontacto li {
+        list-style-type: none;
+        padding: 0 1rem;
+    }
+    
+    .propietario {
+        padding: 1rem 0 1rem 0;
+        background-color: black;
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    /*Comienza productos.html*/
+    
+    .contenedorproductos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.2fr 2.6fr 0.2fr;
+        grid-template-areas: "header header" "main main" "footer footer";
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .headerproductos {
+        grid-area: header;
+    }
+    
+    .mainproductos {
+        grid-area: main;
+    }
+    
+    .productos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .divarticle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .TopZebra {
+        margin: auto;
+        padding: 1rem;
+        text-align: start;
+    }
+    
+    .TopMalaga {
+        margin: auto;
+        padding: 1rem;
+        text-align: start;
+    }
+    
+    .BraletteCharo {
+        margin: auto;
+        padding: 1rem;
+        text-align: start;
+    }
+    
+    .TopTini {
+        margin: auto;
+        padding: 1rem;
+        text-align: start;
+    }
+    
+    .BodyChelsea {
+        margin: auto;
+        padding: 1rem;
+        text-align: start;
+    }
+    
+    .BodyVenecia {
+        margin: auto;
+        padding: 1rem;
+        text-align: start;
+    }
+    
+    .footerproductos {
+        grid-area: footer;
+    }
+    /*Comienza contacto.html*/
+    
+    .contenedorcontacto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 2fr 0.7fr;
+        grid-template-areas: "header" "main" "footer";
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .headercontacto {
+        grid-area: header;
+    }
+    
+    .maincontacto {
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem
+    }
+    
+    .Contactate {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+    
+    .FormularioContacto fieldset {
+        width: 400px;
+        height: 600px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    
+    .divsform {
+        padding: 0.5rem;
+        font-weight: bold;
+    }
+    
+    .texto {
+        width: 250px;
+        height: 250px;
+        resize: none;
+    }
+    
+    .botones {
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .limpiar {
+        background-color: black;
+        color: white;
+        padding: 0 0.8rem 0 0.8rem;
+        margin: 0.4rem;
+        border: solid transparent;
+        font-weight: bold;
+        font-size: 0.8rem;
+        line-height: 2rem;
+        box-sizing: border-box;
+    }
+    
+    .enviar {
+        background-color: black;
+        color: white;
+        padding: 0 0.8rem 0 0.8rem;
+        margin: 0.4rem;
+        border: solid transparent;
+        font-weight: bold;
+        font-size: 0.8rem;
+        line-height: 2rem;
+    }
+    
+     ::placeholder {
+        text-align: start;
+        padding-left: 5px;
+        font-weight: bold;
+    }
+    
+    .footercontacto {
+        grid-area: footer;
+        border-top: black;
+    }
