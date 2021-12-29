@@ -76,12 +76,16 @@
         text-decoration: none;
     }
     
-    .mainindex {
-        grid-area: media;
+    .boton {
+        background-color: black;
+        color: white;
+        border: solid transparent;
+        font-weight: bold;
+        font-size: 1rem;
     }
     
-    .hotblaze {
-        width: 100%;
+    .mainindex {
+        grid-area: media;
     }
     
     .inicioproductos {
