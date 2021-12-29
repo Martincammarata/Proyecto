@@ -34,12 +34,12 @@
     }
     
     .logo {
-        font-size: 1rem;
+        font-size: 1.5rem;
         text-transform: uppercase;
         text-decoration: none;
         color: black;
-        margin: 1rem;
-        padding: 1rem;
+        margin: 1.5rem;
+        padding: 1.5rem;
         transition: all 2s ease;
     }
     
@@ -95,32 +95,21 @@
         justify-content: space-evenly;
     }
     
-    .top {
-        background-color: white;
-        color: black;
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
+    .party {
+        padding-top: 1rem;
+        margin-top: 1rem;
     }
     
-    .top h1 {
+    .inicioproductos h3 {
         padding: 1rem;
         margin: 1rem;
         text-align: center;
-        text-transform: uppercase;
     }
     
-    .newseanson {
-        background-color: white;
-        color: black;
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
-    }
-    
-    .newseanson h1 {
+    .inicioproductos h3 {
         padding: 1rem;
         margin: 1rem;
         text-align: center;
-        text-transform: uppercase;
     }
     
     .llegada {
@@ -143,10 +132,6 @@
         margin-bottom: 1rem;
     }
     
-    .selfie {
-        width: 100%;
-    }
-    
     .email {
         background-color: #e6e6e6;
         display: flex;
@@ -155,6 +140,7 @@
         justify-content: center;
         padding: 1rem;
         margin: 2rem 0 2rem 0;
+        text-align: center;
     }
     
     .intro {
@@ -189,12 +175,12 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        text-align: center;
     }
     
     .footerindex h2 {
         font-size: 2rem;
         padding: 1rem;
-        text-align: center;
     }
     
     .pagoycontacto {
@@ -219,7 +205,6 @@
         background-color: black;
         color: white;
         font-size: 1.5rem;
-        text-align: center;
     }
     /*Comienza productos.html*/
     
