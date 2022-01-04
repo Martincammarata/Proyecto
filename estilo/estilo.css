@@ -101,10 +101,11 @@
         text-align: center;
     }
     
-    @media ( max-width: 400px) {
+    @media screen and (max-width: 400px) {
         .inicioproductos {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
             margin-bottom: 1rem;
         }
