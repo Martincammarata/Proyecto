@@ -30,7 +30,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
     
     .logo {
@@ -93,11 +93,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-    }
-    
-    .party {
-        padding-top: 1rem;
-        margin-top: 1rem;
     }
     
     .inicioproductos h3 {
@@ -230,50 +225,16 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        text-align: center;
     }
     
-    .divarticle {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .comprar {
         text-transform: uppercase;
-        font-weight: bold;
+        transition: all 0.5s ease;
     }
     
-    .TopZebra {
-        margin: auto;
-        padding: 1rem;
-        text-align: start;
-    }
-    
-    .TopMalaga {
-        margin: auto;
-        padding: 1rem;
-        text-align: start;
-    }
-    
-    .BraletteCharo {
-        margin: auto;
-        padding: 1rem;
-        text-align: start;
-    }
-    
-    .TopTini {
-        margin: auto;
-        padding: 1rem;
-        text-align: start;
-    }
-    
-    .BodyChelsea {
-        margin: auto;
-        padding: 1rem;
-        text-align: start;
-    }
-    
-    .BodyVenecia {
-        margin: auto;
-        padding: 1rem;
-        text-align: start;
+    .comprar:hover {
+        transform: scale(1.1, 1.1)
     }
     
     .footerproductos {
@@ -364,7 +325,7 @@
         line-height: 2rem;
     }
     
-     ::placeholder {
+    ::placeholder {
         text-align: start;
         padding-left: 5px;
         font-weight: bold;
