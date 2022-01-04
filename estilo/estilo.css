@@ -101,10 +101,17 @@
         text-align: center;
     }
     
-    .inicioproductos h3 {
-        padding: 1rem;
-        margin: 1rem;
-        text-align: center;
+    @media ( max-width: 400px) {
+        .inicioproductos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .inicioproductos h3 {
+            padding: 0.5rem;
+            margin: 0.5rem;
+        }
     }
     
     .llegada {
@@ -120,11 +127,6 @@
         padding: 1rem;
         margin: 1rem;
         text-transform: uppercase;
-    }
-    
-    .spotify {
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
     }
     
     .email {
@@ -325,7 +327,7 @@
         line-height: 2rem;
     }
     
-    ::placeholder {
+     ::placeholder {
         text-align: start;
         padding-left: 5px;
         font-weight: bold;
