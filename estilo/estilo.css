@@ -14,7 +14,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, auto);
-        grid-template-areas: "header" "media" "footer";
+        grid-template-areas: "header" "main" "footer";
     }
     
     .headerindex {
@@ -85,7 +85,7 @@
     }
     
     .mainindex {
-        grid-area: media;
+        grid-area: main;
     }
     
     .inicioproductos {
@@ -208,9 +208,9 @@
     
     .contenedorproductos {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 0.2fr 2.6fr 0.2fr;
-        grid-template-areas: "header header" "main main" "footer footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "header" "main" "footer";
         justify-content: center;
         align-items: center;
     }
@@ -248,7 +248,7 @@
     .contenedorcontacto {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 2fr 0.7fr;
+        grid-template-rows: repeat(3, auto);
         grid-template-areas: "header" "main" "footer";
         justify-content: center;
         align-items: center;
@@ -305,4 +305,14 @@
     .footercontacto {
         grid-area: footer;
         border-top: black;
+    }
+    /*Comienza consultas.html*/
+    
+    .contenedorcontacto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "header" "main" "footer";
+        justify-content: center;
+        align-items: center;
     }
