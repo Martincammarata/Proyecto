@@ -339,12 +339,9 @@
     }
     
     .consultas div {
+        font-size: 1.5rem;
         padding: 0.5rem;
         margin: 0.5rem;
-    }
-    
-    .list {
-        list-style-type: none;
     }
     
     .consultas h2 {
@@ -354,8 +351,8 @@
         color: rgb(170, 117, 219);
     }
     
-    @media screen and (max-width: 400px) {
-        .consultas {
-            font-size: 1rem;
-        }
+    .consultas h3 {
+        text-transform: uppercase;
+        padding: 0.5rem;
+        margin: 0.5rem;
     }
