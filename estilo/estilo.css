@@ -308,11 +308,54 @@
     }
     /*Comienza consultas.html*/
     
-    .contenedorcontacto {
+    .contenedorconsultas {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, auto);
         grid-template-areas: "header" "main" "footer";
-        justify-content: center;
-        align-items: center;
+    }
+    
+    .mainconsultas {
+        padding: 1rem;
+        margin: 1rem;
+        line-height: 2;
+        letter-spacing: 2px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    
+    .mainconsultas h1 {
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    .consultas {
+        font-size: 1rem;
+    }
+    
+    .consultas div {
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+    
+    .list {
+        list-style-type: none;
+    }
+    
+    .consultas h2 {
+        font-weight: bolder;
+        text-transform: uppercase;
+        padding-bottom: 1rem;
+        color: rgb(170, 117, 219);
+    }
+    
+    @media screen and (max-width: 400px) {
+        .consultas {
+            font-size: 1rem;
+        }
     }
