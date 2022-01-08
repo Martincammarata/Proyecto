@@ -315,11 +315,14 @@
         grid-template-areas: "header" "main" "footer";
     }
     
+    .headerconsultas {
+        grid-area: header;
+    }
+    
     .mainconsultas {
+        grid-area: main;
         padding: 1rem;
         margin: 1rem;
-        line-height: 2;
-        letter-spacing: 2px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -335,23 +338,82 @@
     }
     
     .consultas {
-        font-size: 1rem;
+        line-height: 2;
+        letter-spacing: 2px;
     }
     
     .consultas div {
-        font-size: 1.5rem;
         padding: 0.5rem;
         margin: 0.5rem;
     }
     
     .consultas h2 {
+        font-size: 25px;
         font-weight: bolder;
         text-transform: uppercase;
         color: rgb(170, 117, 219);
     }
     
     .consultas h3 {
+        font-size: 20px;
         text-transform: uppercase;
         padding: 0.5rem;
         margin: 0.5rem;
+    }
+    
+    .footerconsultas {
+        grid-area: footer;
+    }
+    /*Comienza cambios.html*/
+    
+    .contenedorcambios {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "header" "main" "footer";
+    }
+    
+    .headercambios {
+        grid-area: header;
+    }
+    
+    .maincambios {
+        grid-area: main;
+        padding: 1rem;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    
+    .maincambios h1 {
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    .cambios {
+        font-size: 1rem;
+        line-height: 2;
+        letter-spacing: 2px;
+    }
+    
+    .cambios div {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+    
+    .cambios h2 {
+        font-weight: bolder;
+        text-transform: uppercase;
+        padding-bottom: 1rem;
+        color: rgb(170, 117, 219);
+    }
+    
+    .footercambios {
+        grid-area: footer;
     }
