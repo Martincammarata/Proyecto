@@ -14,7 +14,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, auto);
-        grid-template-areas: "header" "media" "footer";
+        grid-template-areas: "header" "main" "footer";
     }
     
     .headerindex {
@@ -34,12 +34,12 @@
     }
     
     .logo {
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-transform: uppercase;
         text-decoration: none;
         color: black;
-        margin: 1.5rem;
-        padding: 1.5rem;
+        margin: 0.5rem;
+        padding: 0.5rem;
         transition: all 2s ease;
     }
     
@@ -60,8 +60,8 @@
     }
     
     .listmenu li {
-        margin: 1rem;
-        padding: 1rem;
+        margin: 0.5rem;
+        padding: 0.5rem;
         transition: all 2s ease;
     }
     
@@ -71,7 +71,7 @@
     
     .listmenu li a {
         color: black;
-        padding: 1rem;
+        padding: 0.5rem;
         font-size: 1.5rem;
         text-decoration: none;
     }
@@ -85,7 +85,7 @@
     }
     
     .mainindex {
-        grid-area: media;
+        grid-area: main;
     }
     
     .inicioproductos {
@@ -101,10 +101,18 @@
         text-align: center;
     }
     
-    .inicioproductos h3 {
-        padding: 1rem;
-        margin: 1rem;
-        text-align: center;
+    @media screen and (max-width: 400px) {
+        .inicioproductos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .inicioproductos h3 {
+            padding: 0.5rem;
+            margin: 0.5rem;
+        }
     }
     
     .llegada {
@@ -120,11 +128,6 @@
         padding: 1rem;
         margin: 1rem;
         text-transform: uppercase;
-    }
-    
-    .spotify {
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
     }
     
     .email {
@@ -143,7 +146,7 @@
         font-weight: bolder;
     }
     
-    .emailRellenar {
+    .rellenarcampo {
         font-size: 1rem;
         width: 20rem;
         margin: 1rem;
@@ -154,7 +157,7 @@
         font-weight: bold;
     }
     
-    .emailEnviar {
+    .enviar {
         background-color: black;
         color: white;
         margin: 1rem;
@@ -205,9 +208,9 @@
     
     .contenedorproductos {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 0.2fr 2.6fr 0.2fr;
-        grid-template-areas: "header header" "main main" "footer footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "header" "main" "footer";
         justify-content: center;
         align-items: center;
     }
@@ -245,7 +248,7 @@
     .contenedorcontacto {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 2fr 0.7fr;
+        grid-template-rows: repeat(3, auto);
         grid-template-areas: "header" "main" "footer";
         justify-content: center;
         align-items: center;
@@ -257,81 +260,98 @@
     
     .maincontacto {
         grid-area: main;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 1rem
     }
     
-    .Contactate {
+    .maincontacto h1 {
         text-transform: uppercase;
-        margin-bottom: 2rem;
-    }
-    
-    .FormularioContacto fieldset {
-        width: 400px;
-        height: 600px;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        align-items: flex-start;
+        text-align: center;
+        margin: 1rem;
         padding: 1rem;
     }
     
-    .divsform {
-        padding: 0.5rem;
-        font-weight: bold;
-    }
-    
-    .texto {
-        width: 250px;
-        height: 250px;
-        resize: none;
-    }
-    
-    .botones {
-        font-weight: bold;
+    .contacto {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
     }
     
-    .limpiar {
-        background-color: black;
-        color: white;
-        padding: 0 0.8rem 0 0.8rem;
-        margin: 0.4rem;
-        border: solid transparent;
-        font-weight: bold;
-        font-size: 0.8rem;
-        line-height: 2rem;
-        box-sizing: border-box;
+    .contacto ul {
+        margin: 1rem;
+        padding: 1rem;
     }
     
-    .enviar {
-        background-color: black;
-        color: white;
-        padding: 0 0.8rem 0 0.8rem;
-        margin: 0.4rem;
-        border: solid transparent;
-        font-weight: bold;
-        font-size: 0.8rem;
-        line-height: 2rem;
+    .contacto li {
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
     }
     
-    ::placeholder {
-        text-align: start;
-        padding-left: 5px;
-        font-weight: bold;
+    .contacto img {
+        padding-right: 0.5rem;
+    }
+    
+    .contacto a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .formulario {
+        margin: 1rem;
+        padding: 1rem;
     }
     
     .footercontacto {
         grid-area: footer;
         border-top: black;
+    }
+    /*Comienza consultas.html*/
+    
+    .contenedorconsultas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "header" "main" "footer";
+    }
+    
+    .mainconsultas {
+        padding: 1rem;
+        margin: 1rem;
+        line-height: 2;
+        letter-spacing: 2px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    
+    .mainconsultas h1 {
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    .consultas {
+        font-size: 1rem;
+    }
+    
+    .consultas div {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+    
+    .consultas h2 {
+        font-weight: bolder;
+        text-transform: uppercase;
+        color: rgb(170, 117, 219);
+    }
+    
+    .consultas h3 {
+        text-transform: uppercase;
+        padding: 0.5rem;
+        margin: 0.5rem;
     }

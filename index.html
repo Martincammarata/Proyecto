@@ -22,14 +22,14 @@
         <header class="headerindex">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid menu">
-                    <a class="navbar-brand" href="./index.html">
+                    <a class="navbar-brand" href="../index.html">
                         <h1 class="logo">
                             Blaze official
                         </h1>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
+                <span class="navbar-toggler-icon"></span>
+                </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 listmenu">
                             <li class="nav-item">
@@ -42,6 +42,23 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Info
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="./pages/preguntas.html">
+                                            Preguntas Frecuentes
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            Another action
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
@@ -52,7 +69,7 @@
             </nav>
         </header>
         <main class="mainindex">
-            <img class="img-fluid max-width: 100% height: auto party" src="./media/fotos/partyedition.png" alt="Party">
+            <img class="img-fluid w-100 height: auto" src="./media/fotos/partyedition.png" alt="Party">
             <section class="inicioproductos">
                 <div id="carouselExampleIndicators1" class="carousel slide w-50" data-bs-ride="carousel">
                     <h3>NEW SEASON</h3>
@@ -114,15 +131,17 @@
                 </div>
             </section>
             <img class="img-fluid w-100 height: auto" src="./media/fotos/selfie.png" alt="selfie">
-            <form class="email" action="#">
-                <label class="intro" for="email">
-                    Dejanos tu mail para recibir novedades
-                <label>
-                <input class="emailRellenar" type="email" name="email" placeholder="Tu email">
-                <input class="emailEnviar" type="submit" value="Enviar">
-            </form>
         </main>
         <footer class="footerindex">
+            <div>
+                <form class="email" action="#">
+                    <label class="intro" for="email">
+                        Dejanos tu mail para recibir novedades
+                    <label>
+                    <input class="rellenarcampo rounded" type="email" name="email" placeholder="Tu email">
+                    <input class="enviar rounded" type="submit" value="Enviar">
+                </form>
+            </div>
             <h2>
                 Medios de pago
             </h2>
@@ -162,15 +181,19 @@
                         </a>
                     </li>
                     <li>
-                        <a href="
-                        https://wa.me/+541173649893
-                        " target="_black"><img src="./media/fotos/whatsapp-32x32.png" alt="whastapp"></a>
+                        <a href="https://wa.me/+541173649893" target="_black">
+                        <img src="./media/fotos/whatsapp-32x32.png" alt="whastapp">
+                    </a>
                     </li>
                     <li>
-                        <a class="facebook" href="https://facebook.com/Blazeofficialok" target="_black"> <img src="./media/fotos/Facebook 32x32.png" alt="facebook"></a>
+                        <a class="facebook" href="https://facebook.com/Blazeofficialok" target="_black"> 
+                            <img src="./media/fotos/Facebook 32x32.png" alt="facebook">
+                        </a>
                     </li>
                     <li>
-                        <a class="instagram" href="https://www.instagram.com/blazeofficialok/" target="_black"> <img src="./media/fotos/Instagram 32x32.png" alt="instagram"></a>
+                        <a class="instagram" href="https://www.instagram.com/blazeofficialok/" target="_black"> 
+                            <img src="./media/fotos/Instagram 32x32.png" alt="instagram">
+                        </a>
                     </li>
                 </ul>
             </div>
