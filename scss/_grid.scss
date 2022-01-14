@@ -1,98 +1,18 @@
-.contenedorindex {
+.contenedorgrid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "header" "main" "footer";
 }
 
-.headerindexgrid {
+.headergrid {
     grid-area: header;
 }
 
-.mainindexgrid {
+.mainigrid {
     grid-area: main;
 }
 
-.footerindexgrid {
-    grid-area: footer;
-}
-
-.contenedorproductos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "header" "main" "footer";
-    justify-content: center;
-    align-items: center;
-}
-
-.headerproductosgrid {
-    grid-area: header;
-}
-
-.mainproductosgrid {
-    grid-area: main;
-}
-
-.footerproductosgrid {
-    grid-area: footer;
-}
-
-.contenedorcontacto {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "header" "main" "footer";
-    justify-content: center;
-    align-items: center;
-}
-
-.headercontactogrid {
-    grid-area: header;
-}
-
-.maincontactogrid {
-    grid-area: main;
-}
-
-.headercontactogrid {
-    grid-area: header;
-}
-
-.contenedorpreguntas {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "header" "main" "footer";
-}
-
-.headerpreguntasgrid {
-    grid-area: header;
-}
-
-.mainpreguntasgrid {
-    grid-area: main;
-}
-
-.footerconsultasgrid {
-    grid-area: footer;
-}
-
-.contenedorcambios {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "header" "main" "footer";
-}
-
-.headercambiosgrid {
-    grid-area: header;
-}
-
-.maincambiosgrid {
-    grid-area: main;
-}
-
-.footercambiosgrid {
+.footergrid {
     grid-area: footer;
 }

@@ -1,51 +1,53 @@
+@import "variables";
 footer {
-    grid-area: footer;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
     div {
         .email {
-            background-color: #e6e6e6;
+            background-color: $bg-grey;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
-            padding: 1rem;
-            margin: 2rem 0 2rem 0;
+            padding: $pd-2;
+            margin: 2rem 0;
             text-align: center;
             .intro {
-                font-size: 1rem;
+                font-size: $fs-2;
                 font-weight: bolder;
             }
             .rellenarcampo {
-                font-size: 1rem;
+                font-size: $fs-2;
                 width: 20rem;
-                margin: 1rem;
-                padding: 1rem;
-                border: solid #c4c4c4;
-                color: #333;
-                background-color: white;
+                margin: $mg-2;
+                padding: $pd-2;
+                border: solid $color-grey;
+                color: $color-dark-2;
+                background-color: $bg-light;
                 font-weight: bold;
             }
             .enviar {
-                background-color: black;
-                color: white;
-                margin: 1rem;
-                padding: 0 2rem 0 2rem;
+                background-color: $bg-dark;
+                color: $color-light;
+                margin: $mg-2;
+                padding: 0 2rem;
                 border: solid transparent;
                 font-weight: bold;
-                font-size: 1rem;
+                font-size: $fs-2;
                 line-height: 3rem;
             }
         }
     }
     h2 {
-        font-size: 2rem;
-        padding: 1rem;
+        font-size: $h2-fs;
+        padding: $pd-2;
+        text-transform: uppercase;
+        font-weight: bolder;
     }
     .pagoycontacto {
-        padding: 1rem 0 2rem 0;
+        padding: 1rem 0;
         font-weight: bolder;
         ul {
             display: flex;
@@ -58,9 +60,9 @@ footer {
         }
     }
     .propietario {
-        padding: 1rem 0 1rem 0;
-        background-color: black;
-        color: white;
-        font-size: 1.5rem;
+        padding: 1rem 0;
+        background-color: $bg-dark;
+        color: $color-light;
+        font-size: $fs-3;
     }
 }

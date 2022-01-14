@@ -1,5 +1,6 @@
+@import "variables";
 header {
-    background-color: white;
+    background-color: $bg-light;
     position: sticky;
     top: 0px;
     z-index: 1;
@@ -12,13 +13,13 @@ header {
         div {
             a {
                 .logo {
-                    font-size: 2rem;
+                    font-size: $h1-fs;
                     text-transform: uppercase;
                     text-decoration: none;
-                    color: black;
-                    margin: 0.5rem;
-                    padding: 0.5rem;
-                    transition: all 2s ease;
+                    color: $color-dark;
+                    margin: $mg-1;
+                    padding: $pd-1;
+                    transition: $transition-2;
                     &:hover {
                         transform: scale(1.1, 1.1)
                     }
@@ -31,16 +32,16 @@ header {
                     flex-direction: row;
                     flex-wrap: wrap;
                     li {
-                        margin: 0.5rem;
-                        padding: 0.5rem;
-                        transition: all 2s ease;
+                        margin: $mg-1;
+                        padding: $pd-1;
+                        transition: $transition-2;
                         &:hover {
                             transform: scale(1.1, 1.1)
                         }
                         a {
-                            color: black;
-                            padding: 0.5rem;
-                            font-size: 1.5rem;
+                            color: $color-dark;
+                            padding: $pd-1;
+                            font-size: $fs-3;
                             text-decoration: none;
                         }
                     }
@@ -51,7 +52,14 @@ header {
                         color: white;
                         border: solid transparent;
                         font-weight: bold;
-                        font-size: 1rem;
+                        font-size: $fs-2;
+                        transition: $transition-1;
+                        &:hover {
+                            border: $color-dark;
+                            transform: scale(1.1, 1.1);
+                            background-color: $bg-grey;
+                            color: $color-dark;
+                        }
                     }
                 }
             }

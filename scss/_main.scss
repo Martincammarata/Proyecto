@@ -1,3 +1,4 @@
+@import "variables";
 .mainindex {
     .inicioproductos {
         display: flex;
@@ -6,8 +7,8 @@
         justify-content: space-evenly;
         div {
             h3 {
-                padding: 1rem;
-                margin: 1rem;
+                padding: $pd-2;
+                margin: $mg-2;
                 text-align: center;
             }
         }
@@ -25,7 +26,7 @@
             div {
                 .comprar {
                     text-transform: uppercase;
-                    transition: all 0.5s ease;
+                    transition: $transition-1;
                     &:hover {
                         transform: scale(1.1, 1.1)
                     }
@@ -37,10 +38,11 @@
 
 .maincontacto {
     h1 {
+        font-size: $h1-fs;
         text-transform: uppercase;
         text-align: center;
-        margin: 1rem;
-        padding: 1rem;
+        margin: $mg-2;
+        padding: $pd-2;
     }
     .contacto {
         display: flex;
@@ -49,70 +51,82 @@
         justify-content: center;
         section {
             ul {
-                margin: 1rem;
-                padding: 1rem;
+                margin: $mg-2;
+                padding: $pd-2;
                 li {
-                    margin: 1rem;
+                    margin: $mg-2;
                     display: flex;
                     flex-direction: row;
                     justify-content: start;
                     img {
-                        padding-right: 0.5rem;
+                        padding-right: $pd-1;
                     }
                     a {
                         text-decoration: none;
-                        color: black;
+                        color: $color-dark;
                     }
                 }
             }
         }
         section {
             .formulario {
-                margin: 1rem;
-                padding: 1rem;
+                margin: $mg-2;
+                padding: $pd-2;
             }
         }
     }
 }
 
 .mainpreguntas {
-    padding: 1rem;
-    margin: 1rem;
+    padding: $pd-2;
+    margin: $mg-2;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
     h1 {
+        font-size: $h1-fs;
         font-weight: bolder;
         text-transform: uppercase;
         text-align: center;
-        padding: 1rem;
-        margin: 1rem;
+        padding: $pd-2;
+        margin: $mg-2;
     }
     .preguntas {
         line-height: 2;
         letter-spacing: 2px;
         div {
-            padding: 0.5rem;
-            margin: 0.5rem;
+            padding: $pd-1;
+            margin: $mg-1;
             section {
                 button {
-                    h2 {
-                        font-size: 25px;
+                    h3 {
+                        padding: 0 0.5rem;
+                        font-size: $h3-fs;
                         font-weight: bolder;
                         text-transform: uppercase;
-                        color: rgb(170, 117, 219);
+                        color: $color-violet;
                     }
                 }
             }
-            section {
+            div {
                 div {
                     div {
-                        h3 {
-                            font-size: 20px;
+                        p {
+                            font-size: $fs-3;
+                        }
+                        h4 {
+                            font-size: $h4-fs;
                             text-transform: uppercase;
-                            padding: 0.5rem;
-                            margin: 0.5rem;
+                            padding: $pd-2;
+                            margin: $mg-2;
+                        }
+                        ul {
+                            li {
+                                p {
+                                    font-size: $fs-1;
+                                }
+                            }
                         }
                     }
                 }
@@ -122,34 +136,45 @@
 }
 
 .maincambios {
-    padding: 1rem;
-    margin: 1rem;
+    padding: $pd-2;
+    margin: $mg-2;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
     h1 {
+        font-size: $h1-fs;
         font-weight: bolder;
         text-transform: uppercase;
         text-align: center;
-        padding: 1rem;
-        margin: 1rem;
+        padding: $pd-2;
+        margin: $mg-2;
     }
     .cambios {
-        font-size: 1rem;
+        font-size: $fs-2;
         line-height: 2;
         letter-spacing: 2px;
-        padding: 2rem;
-        margin: 2rem;
+        padding: $pd-3;
+        margin: $mg-3;
         div {
-            font-size: 1.5rem;
-            padding: 0.5rem;
-            margin: 0.5rem;
-            h2 {
+            padding: $pd-1;
+            margin: $mg-1;
+            h3 {
+                font-size: $h3-fs;
                 font-weight: bolder;
                 text-transform: uppercase;
-                padding-bottom: 1rem;
-                color: rgb(170, 117, 219);
+                padding-bottom: $pd-2;
+                color: $color-violet;
+            }
+            p {
+                font-size: $fs-3;
+            }
+        }
+        ul {
+            li {
+                p {
+                    font-size: $fs-1;
+                }
             }
         }
     }
