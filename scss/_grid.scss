@@ -1,18 +1,18 @@
-.contenedorgrid {
+.contenedor-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "header" "main" "footer";
 }
 
-.headergrid {
+.header-grid {
     grid-area: header;
 }
 
-.mainigrid {
+.maini-grid {
     grid-area: main;
 }
 
-.footergrid {
+.footer-grid {
     grid-area: footer;
 }

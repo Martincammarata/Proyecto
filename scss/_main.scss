@@ -24,7 +24,7 @@
         text-align: center;
         article {
             div {
-                .comprar {
+                .card-btn {
                     text-transform: uppercase;
                     transition: $transition-1;
                     &:hover {
@@ -100,6 +100,7 @@
             margin: $mg-1;
             section {
                 button {
+                    z-index: 0;
                     h3 {
                         padding: 0 0.5rem;
                         font-size: $h3-fs;

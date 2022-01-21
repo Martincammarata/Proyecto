@@ -5,7 +5,7 @@ footer {
     justify-content: space-around;
     text-align: center;
     div {
-        .email {
+        .newsltr {
             background-color: $bg-grey;
             display: flex;
             flex-direction: row;
@@ -14,11 +14,11 @@ footer {
             padding: $pd-2;
             margin: 2rem 0;
             text-align: center;
-            .intro {
+            .newsltr-intro {
                 font-size: $fs-2;
                 font-weight: bolder;
             }
-            .rellenarcampo {
+            .newsltr-field {
                 font-size: $fs-2;
                 width: 20rem;
                 margin: $mg-2;
@@ -28,7 +28,7 @@ footer {
                 background-color: $bg-light;
                 font-weight: bold;
             }
-            .enviar {
+            .newsltr-btn {
                 background-color: $bg-dark;
                 color: $color-light;
                 margin: $mg-2;
@@ -52,6 +52,7 @@ footer {
         ul {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: center;
             li {
                 list-style-type: none;

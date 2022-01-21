@@ -12,7 +12,7 @@ header {
     nav {
         div {
             a {
-                .logo {
+                .menu_logo {
                     font-size: $h1-fs;
                     text-transform: uppercase;
                     text-decoration: none;
@@ -26,7 +26,7 @@ header {
                 }
             }
             div {
-                .listmenu {
+                .menu-list {
                     list-style-type: none;
                     display: flex;
                     flex-direction: row;
@@ -47,7 +47,7 @@ header {
                     }
                 }
                 form {
-                    .boton {
+                    .search-btn {
                         background-color: black;
                         color: white;
                         border: solid transparent;
