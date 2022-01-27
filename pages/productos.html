@@ -12,7 +12,7 @@
     <!--google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <title>Blaze official | Productos</title>
 </head>
 
@@ -60,14 +60,22 @@
                             </li>
                         </ul>
                         <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-                            <button class="search-btn btn btn-outline-success" type="submit">Search</button>
+                            <input class="search-fieldset rounded" type="search" placeholder="" aria-label="Search">
+                            <button class="search-btn rounded" type="submit">Search</button>
                         </form>
                     </div>
                 </div>
             </nav>
         </header>
         <main class="mainproductos main-grid">
+            <section>
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Productos</li>
+                    </ol>
+                </nav>
+            </section>
             <section class="productos">
                 <article class="card m-3" style="width: 25rem;">
                     <img src="../media/fotos/cards/top-zebra.jpg" class="card-img-top" alt="Top Zebra">
@@ -153,9 +161,9 @@
             <div>
                 <form class="newsltr" action="#">
                     <label class="newsltr-intro" for="email">
-                        Dejanos tu mail para recibir novedades
+                        Déjanos tu mail para recibir novedades
                     <label>
-                    <input class="newsltr-field rounded" type="email" name="email" placeholder="Tu email">
+                    <input class="newsltr-fieldset rounded" type="email" name="email" placeholder="Tu email">
                     <input class="newsltr-btn rounded" type="submit" value="Enviar">
                 </form>
             </div>
@@ -168,7 +176,10 @@
                         <img src="../media/fotos/pagos/mercadopago.svg" alt="Mercadopago">
                     </li>
                     <li>
-                        <img src="../media/fotos/pagos/visa.svg" alt="visa">
+                        <img src="../media/fotos/pagos/deposito.svg" alt="Deposito">
+                    </li>
+                    <li>
+                        <img src="../media/fotos/pagos/visa.svg" alt="Visa">
                     </li>
                     <li>
                         <img src="../media/fotos/pagos/mastercard.svg" alt="Mastercard">
@@ -181,9 +192,6 @@
                     </li>
                     <li>
                         <img src="../media/fotos/pagos/efectivo.svg" alt="Efectivo">
-                    </li>
-                    <li>
-                        <img src="../media/fotos/pagos/deposito.svg" alt="Deposito">
                     </li>
                 </ul>
             </div>

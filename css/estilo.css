@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: white; }
 
 .contenedor-grid {
@@ -39,6 +39,7 @@ header {
     color: black;
     margin: 0.6rem;
     padding: 0.6rem;
+    letter-spacing: 0.2rem;
     transition: all 1s ease; }
     header nav div a .menu_logo:hover {
       transform: scale(1.1, 1.1); }
@@ -58,28 +59,49 @@ header {
         padding: 0.6rem;
         font-size: 1.2rem;
         text-decoration: none; }
+  header nav div div form .search-fieldset {
+    font-size: 1rem;
+    width: 10rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: solid #c4c4c4;
+    color: #333333;
+    background-color: white; }
   header nav div div form .search-btn {
     background-color: black;
     color: white;
+    margin: 0.5rem;
+    padding: 0.5rem;
     border: solid transparent;
     font-weight: bold;
     font-size: 1rem;
     transition: all 0.5s ease; }
     header nav div div form .search-btn:hover {
-      border: black;
       transform: scale(1.1, 1.1);
+      border: black;
       background-color: #e6e6e6;
       color: black; }
+
+.mainindex h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1.2rem;
+  letter-spacing: 0.5rem; }
 
 .mainindex .inicioproductos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly; }
-  .mainindex .inicioproductos div h3 {
-    padding: 1.2rem;
-    margin: 1.2rem;
-    text-align: center; }
+
+.mainproductos section nav {
+  padding-left: 2rem; }
+  .mainproductos section nav ol li a {
+    color: black;
+    list-style: none;
+    text-decoration: none; }
 
 .mainproductos .productos {
   display: flex;
@@ -93,12 +115,20 @@ header {
     .mainproductos .productos article div .card-btn:hover {
       transform: scale(1.1, 1.1); }
 
+.maincontacto section nav {
+  padding-left: 2rem; }
+  .maincontacto section nav ol li a {
+    color: black;
+    list-style: none;
+    text-decoration: none; }
+
 .maincontacto h1 {
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
   margin: 1.2rem;
-  padding: 1.2rem; }
+  padding: 1.2rem;
+  letter-spacing: 0.2rem; }
 
 .maincontacto .contacto {
   display: flex;
@@ -118,81 +148,100 @@ header {
       .maincontacto .contacto section ul li a {
         text-decoration: none;
         color: black; }
-  .maincontacto .contacto section .formulario {
+  .maincontacto .contacto section .form {
     margin: 1.2rem;
     padding: 1.2rem; }
+    .maincontacto .contacto section .form div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .maincontacto .contacto section .form div .btn-form {
+        background-color: black;
+        color: white;
+        margin: 0.6rem;
+        padding: 0 1.8rem;
+        border: solid transparent;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 3rem; }
 
-.mainpreguntas {
+.mainpreguntas section nav {
+  padding-left: 2rem; }
+  .mainpreguntas section nav ol li a {
+    color: black;
+    list-style: none;
+    text-decoration: none; }
+
+.mainpreguntas h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  padding: 1.2rem;
+  margin: 1.2rem; }
+
+.mainpreguntas .preguntas {
   padding: 1.2rem;
   margin: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center; }
-  .mainpreguntas h1 {
-    font-size: 2rem;
-    font-weight: bolder;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 1.2rem;
-    margin: 1.2rem; }
-  .mainpreguntas .preguntas {
-    line-height: 2;
-    letter-spacing: 2px; }
-    .mainpreguntas .preguntas div {
-      padding: 0.6rem;
-      margin: 0.6rem; }
-      .mainpreguntas .preguntas div section button {
-        z-index: 0; }
-        .mainpreguntas .preguntas div section button h3 {
-          padding: 0 0.5rem;
-          font-size: 1.6rem;
-          font-weight: bolder;
-          text-transform: uppercase;
-          color: #aa75db; }
-      .mainpreguntas .preguntas div div div div p {
-        font-size: 1.2rem; }
-      .mainpreguntas .preguntas div div div div h4 {
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        padding: 1.2rem;
-        margin: 1.2rem; }
-      .mainpreguntas .preguntas div div div div ul li p {
-        font-size: 0.8rem; }
-
-.maincambios {
-  padding: 1.2rem;
-  margin: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center; }
-  .maincambios h1 {
-    font-size: 2rem;
-    font-weight: bolder;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 1.2rem;
-    margin: 1.2rem; }
-  .maincambios .cambios {
-    font-size: 1rem;
-    line-height: 2;
-    letter-spacing: 2px;
-    padding: 1.8rem;
-    margin: 1.8rem; }
-    .maincambios .cambios div {
-      padding: 0.6rem;
-      margin: 0.6rem; }
-      .maincambios .cambios div h3 {
+  line-height: 2;
+  letter-spacing: 2px; }
+  .mainpreguntas .preguntas div {
+    padding: 0.6rem;
+    margin: 0.6rem; }
+    .mainpreguntas .preguntas div section button {
+      z-index: 0; }
+      .mainpreguntas .preguntas div section button h3 {
+        padding: 0 0.5rem;
         font-size: 1.6rem;
-        font-weight: bolder;
+        font-weight: bold;
         text-transform: uppercase;
-        padding-bottom: 1.2rem;
         color: #aa75db; }
-      .maincambios .cambios div p {
-        font-size: 1.2rem; }
-    .maincambios .cambios ul li p {
+    .mainpreguntas .preguntas div div div div p {
+      font-size: 1.2rem; }
+    .mainpreguntas .preguntas div div div div h4 {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      padding: 1.2rem;
+      margin: 1.2rem; }
+    .mainpreguntas .preguntas div div div div ul li p {
       font-size: 0.8rem; }
+
+.maincambios section nav {
+  padding-left: 2rem; }
+  .maincambios section nav ol li a {
+    color: black;
+    list-style: none;
+    text-decoration: none; }
+
+.maincambios h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.2rem;
+  margin: 1.2rem; }
+
+.maincambios .cambios {
+  font-size: 1rem;
+  line-height: 2;
+  letter-spacing: 2px;
+  padding: 1.8rem;
+  margin: 1.8rem; }
+  .maincambios .cambios div {
+    padding: 0.6rem;
+    margin: 0.6rem; }
+    .maincambios .cambios div h3 {
+      font-size: 1.6rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding-bottom: 1.2rem;
+      color: #aa75db; }
+    .maincambios .cambios div p {
+      font-size: 1.2rem; }
+  .maincambios .cambios ul li p {
+    font-size: 0.8rem; }
 
 footer {
   display: flex;
@@ -205,17 +254,19 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 1.2rem;
-    margin: 2rem 0;
+    align-items: center;
+    padding: 0.6rem;
+    margin: 1rem 0;
     text-align: center; }
     footer div .newsltr .newsltr-intro {
+      margin: 0.5rem;
       font-size: 1rem;
-      font-weight: bolder; }
-    footer div .newsltr .newsltr-field {
+      font-weight: bold; }
+    footer div .newsltr .newsltr-fieldset {
       font-size: 1rem;
       width: 20rem;
-      margin: 1.2rem;
-      padding: 1.2rem;
+      margin: 0.5rem;
+      padding: 0.5rem;
       border: solid #c4c4c4;
       color: #333333;
       background-color: white;
@@ -223,28 +274,28 @@ footer {
     footer div .newsltr .newsltr-btn {
       background-color: black;
       color: white;
-      margin: 1.2rem;
-      padding: 0 2rem;
+      margin: 0.5rem;
+      padding: 1rem;
       border: solid transparent;
       font-weight: bold;
-      font-size: 1rem;
-      line-height: 3rem; }
+      font-size: 1rem; }
   footer h2 {
     font-size: 1.8rem;
-    padding: 1.2rem;
+    padding: 0.6rem;
     text-transform: uppercase;
-    font-weight: bolder; }
+    font-weight: bold;
+    letter-spacing: 0.2rem; }
   footer .pagoycontacto {
-    padding: 1rem 0;
-    font-weight: bolder; }
+    font-weight: bold; }
     footer .pagoycontacto ul {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: center; }
+      justify-content: center;
+      padding: 0.6rem; }
       footer .pagoycontacto ul li {
         list-style-type: none;
-        padding: 0 1rem; }
+        padding: 1rem; }
   footer .propietario {
     padding: 1rem 0;
     background-color: black;

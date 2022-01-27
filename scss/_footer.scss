@@ -11,18 +11,20 @@ footer {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
-            padding: $pd-2;
-            margin: 2rem 0;
+            align-items: center;
+            padding: $pd-1;
+            margin: 1rem 0;
             text-align: center;
             .newsltr-intro {
+                margin: 0.5rem;
                 font-size: $fs-2;
-                font-weight: bolder;
+                font-weight: bold;
             }
-            .newsltr-field {
+            .newsltr-fieldset {
                 font-size: $fs-2;
                 width: 20rem;
-                margin: $mg-2;
-                padding: $pd-2;
+                margin: 0.5rem;
+                padding: 0.5rem;
                 border: solid $color-grey;
                 color: $color-dark-2;
                 background-color: $bg-light;
@@ -31,32 +33,32 @@ footer {
             .newsltr-btn {
                 background-color: $bg-dark;
                 color: $color-light;
-                margin: $mg-2;
-                padding: 0 2rem;
+                margin: 0.5rem;
+                padding: 1rem;
                 border: solid transparent;
                 font-weight: bold;
                 font-size: $fs-2;
-                line-height: 3rem;
             }
         }
     }
     h2 {
         font-size: $h2-fs;
-        padding: $pd-2;
+        padding: $pd-1;
         text-transform: uppercase;
-        font-weight: bolder;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
     }
     .pagoycontacto {
-        padding: 1rem 0;
-        font-weight: bolder;
+        font-weight: bold;
         ul {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
+            padding: $pd-1;
             li {
                 list-style-type: none;
-                padding: 0 1rem;
+                padding: 1rem;
             }
         }
     }

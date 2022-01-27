@@ -1,21 +1,36 @@
 @import "variables";
 .mainindex {
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: $h2-fs;
+        font-weight: bold;
+        margin: $mg-2;
+        letter-spacing: 0.5rem;
+    }
     .inicioproductos {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        div {
-            h3 {
-                padding: $pd-2;
-                margin: $mg-2;
-                text-align: center;
-            }
-        }
     }
 }
 
 .mainproductos {
+    section {
+        nav {
+            padding-left: 2rem;
+            ol {
+                li {
+                    a {
+                        color: $color-dark;
+                        list-style: none;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
     .productos {
         display: flex;
         flex-direction: row;
@@ -37,12 +52,27 @@
 }
 
 .maincontacto {
+    section {
+        nav {
+            padding-left: 2rem;
+            ol {
+                li {
+                    a {
+                        color: $color-dark;
+                        list-style: none;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
     h1 {
         font-size: $h1-fs;
         text-transform: uppercase;
         text-align: center;
         margin: $mg-2;
         padding: $pd-2;
+        letter-spacing: 0.2rem;
     }
     .contacto {
         display: flex;
@@ -69,30 +99,56 @@
             }
         }
         section {
-            .formulario {
+            .form {
                 margin: $mg-2;
                 padding: $pd-2;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .btn-form {
+                        background-color: black;
+                        color: white;
+                        margin: 0.6rem;
+                        padding: 0 1.8rem;
+                        border: solid transparent;
+                        font-weight: bold;
+                        font-size: 1rem;
+                        line-height: 3rem;
+                    }
+                }
             }
         }
     }
 }
 
 .mainpreguntas {
-    padding: $pd-2;
-    margin: $mg-2;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+    section {
+        nav {
+            padding-left: 2rem;
+            ol {
+                li {
+                    a {
+                        color: $color-dark;
+                        list-style: none;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
     h1 {
         font-size: $h1-fs;
-        font-weight: bolder;
+        font-weight: bold;
         text-transform: uppercase;
         text-align: center;
+        letter-spacing: 0.2rem;
         padding: $pd-2;
         margin: $mg-2;
     }
     .preguntas {
+        padding: $pd-2;
+        margin: $mg-2;
         line-height: 2;
         letter-spacing: 2px;
         div {
@@ -104,7 +160,7 @@
                     h3 {
                         padding: 0 0.5rem;
                         font-size: $h3-fs;
-                        font-weight: bolder;
+                        font-weight: bold;
                         text-transform: uppercase;
                         color: $color-violet;
                     }
@@ -137,15 +193,24 @@
 }
 
 .maincambios {
-    padding: $pd-2;
-    margin: $mg-2;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+    section {
+        nav {
+            padding-left: 2rem;
+            ol {
+                li {
+                    a {
+                        color: $color-dark;
+                        list-style: none;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
     h1 {
         font-size: $h1-fs;
-        font-weight: bolder;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
         text-transform: uppercase;
         text-align: center;
         padding: $pd-2;
@@ -162,7 +227,7 @@
             margin: $mg-1;
             h3 {
                 font-size: $h3-fs;
-                font-weight: bolder;
+                font-weight: bold;
                 text-transform: uppercase;
                 padding-bottom: $pd-2;
                 color: $color-violet;
