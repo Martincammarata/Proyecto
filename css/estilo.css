@@ -97,7 +97,8 @@ header {
   justify-content: space-evenly; }
 
 .mainproductos section nav {
-  padding-left: 2rem; }
+  padding-left: 2rem;
+  margin-top: 1rem; }
   .mainproductos section nav ol li a {
     color: black;
     list-style: none;
@@ -116,7 +117,8 @@ header {
       transform: scale(1.1, 1.1); }
 
 .maincontacto section nav {
-  padding-left: 2rem; }
+  padding-left: 2rem;
+  margin-top: 1rem; }
   .maincontacto section nav ol li a {
     color: black;
     list-style: none;
@@ -166,7 +168,8 @@ header {
         line-height: 3rem; }
 
 .mainpreguntas section nav {
-  padding-left: 2rem; }
+  padding-left: 2rem;
+  margin-top: 1rem; }
   .mainpreguntas section nav ol li a {
     color: black;
     list-style: none;
@@ -208,7 +211,8 @@ header {
       font-size: 0.8rem; }
 
 .maincambios section nav {
-  padding-left: 2rem; }
+  padding-left: 2rem;
+  margin-top: 1rem; }
   .maincambios section nav ol li a {
     color: black;
     list-style: none;
