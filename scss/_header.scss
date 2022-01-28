@@ -3,7 +3,7 @@ header {
     background-color: $bg-light;
     position: sticky;
     top: 0px;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -13,7 +13,7 @@ header {
         div {
             a {
                 .menu_logo {
-                    font-size: $h1-fs;
+                    font-size: $h2-fs;
                     text-transform: uppercase;
                     text-decoration: none;
                     color: $color-dark;

@@ -22,18 +22,25 @@ body {
 .footer-grid {
   grid-area: footer; }
 
+@media only screen and (max-width: 500px) {
+  .mainproductos .productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; } }
+
 header {
   background-color: white;
   position: sticky;
   top: 0px;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center; }
   header nav div a .menu_logo {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     text-decoration: none;
     color: black;
@@ -101,8 +108,8 @@ header {
   margin-top: 1rem; }
   .mainproductos section nav ol li a {
     color: black;
-    list-style: none;
-    text-decoration: none; }
+    text-decoration: none;
+    font-weight: bold; }
 
 .mainproductos .productos {
   display: flex;
@@ -121,8 +128,8 @@ header {
   margin-top: 1rem; }
   .maincontacto section nav ol li a {
     color: black;
-    list-style: none;
-    text-decoration: none; }
+    text-decoration: none;
+    font-weight: bold; }
 
 .maincontacto h1 {
   font-size: 2rem;
@@ -172,8 +179,8 @@ header {
   margin-top: 1rem; }
   .mainpreguntas section nav ol li a {
     color: black;
-    list-style: none;
-    text-decoration: none; }
+    text-decoration: none;
+    font-weight: bold; }
 
 .mainpreguntas h1 {
   font-size: 2rem;
@@ -196,14 +203,14 @@ header {
       z-index: 0; }
       .mainpreguntas .preguntas div section button h3 {
         padding: 0 0.5rem;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         font-weight: bold;
         text-transform: uppercase;
         color: #aa75db; }
     .mainpreguntas .preguntas div div div div p {
       font-size: 1.2rem; }
     .mainpreguntas .preguntas div div div div h4 {
-      font-size: 1.4rem;
+      font-size: 1rem;
       text-transform: uppercase;
       padding: 1.2rem;
       margin: 1.2rem; }
@@ -215,8 +222,8 @@ header {
   margin-top: 1rem; }
   .maincambios section nav ol li a {
     color: black;
-    list-style: none;
-    text-decoration: none; }
+    text-decoration: none;
+    font-weight: bold; }
 
 .maincambios h1 {
   font-size: 2rem;
@@ -284,7 +291,7 @@ footer {
       font-weight: bold;
       font-size: 1rem; }
   footer h2 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     padding: 0.6rem;
     text-transform: uppercase;
     font-weight: bold;
