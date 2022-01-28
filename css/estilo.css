@@ -30,7 +30,7 @@ header {
     header nav div div ul li a {
       font-size: 1.2rem; }
     header nav div div ul li ul li a {
-      font-size: 0.6rem; }
+      font-size: 8rem; }
 
 .mainindex h2 {
   text-transform: uppercase;
@@ -196,6 +196,16 @@ header {
       font-size: 1.2rem; }
   .maincambios .cambios ul li p {
     font-size: 0.8rem; }
+
+@media only screen and (max-width: 500px) {
+  header nav div a .menu_logo {
+    transition: none; }
+    header nav div a .menu_logo:hover {
+      transform: none; }
+  header nav div div ul li {
+    transition: none; }
+    header nav div div ul li:hover {
+      transform: none; } }
 
 footer {
   display: flex;
