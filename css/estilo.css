@@ -7,87 +7,30 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: white; }
 
-.contenedor-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, auto);
-  grid-template-areas: "header" "main" "footer"; }
-
-.header-grid {
-  grid-area: header; }
-
-.maini-grid {
-  grid-area: main; }
-
-.footer-grid {
-  grid-area: footer; }
-
-@media only screen and (max-width: 500px) {
-  .mainproductos .productos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; } }
-
 header {
   background-color: white;
   position: sticky;
   top: 0px;
   z-index: 2;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center; }
   header nav div a .menu_logo {
     font-size: 1.8rem;
     text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-    margin: 0.6rem;
-    padding: 0.6rem;
+    margin: 0 1rem;
     letter-spacing: 0.2rem;
     transition: all 1s ease; }
     header nav div a .menu_logo:hover {
       transform: scale(1.1, 1.1); }
-  header nav div div .menu-list {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    header nav div div .menu-list li {
-      margin: 0.6rem;
-      padding: 0.6rem;
-      transition: all 1s ease; }
-      header nav div div .menu-list li:hover {
-        transform: scale(1.1, 1.1); }
-      header nav div div .menu-list li a {
-        color: black;
-        padding: 0.6rem;
-        font-size: 1.2rem;
-        text-decoration: none; }
-  header nav div div form .search-fieldset {
-    font-size: 1rem;
-    width: 10rem;
-    margin: 0.5rem;
-    padding: 0.5rem;
-    border: solid #c4c4c4;
-    color: #333333;
-    background-color: white; }
-  header nav div div form .search-btn {
-    background-color: black;
-    color: white;
-    margin: 0.5rem;
-    padding: 0.5rem;
-    border: solid transparent;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: all 0.5s ease; }
-    header nav div div form .search-btn:hover {
-      transform: scale(1.1, 1.1);
-      border: black;
-      background-color: #e6e6e6;
-      color: black; }
+  header nav div div ul li {
+    padding: 0.6rem;
+    transition: all 1s ease; }
+    header nav div div ul li:hover {
+      transform: scale(1.1, 1.1); }
+    header nav div div ul li a {
+      font-size: 1.2rem; }
+    header nav div div ul li ul li a {
+      font-size: 0.6rem; }
 
 .mainindex h2 {
   text-transform: uppercase;
@@ -267,16 +210,15 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 0.6rem;
-    margin: 1rem 0;
+    padding: 1rem;
     text-align: center; }
     footer div .newsltr .newsltr-intro {
-      margin: 0.5rem;
       font-size: 1rem;
       font-weight: bold; }
     footer div .newsltr .newsltr-fieldset {
       font-size: 1rem;
       width: 20rem;
-      margin: 0.5rem;
+      margin: 1rem;
       padding: 0.5rem;
       border: solid #c4c4c4;
       color: #333333;
@@ -285,28 +227,25 @@ footer {
     footer div .newsltr .newsltr-btn {
       background-color: black;
       color: white;
-      margin: 0.5rem;
-      padding: 1rem;
+      padding: 0.5rem;
       border: solid transparent;
       font-weight: bold;
       font-size: 1rem; }
   footer h2 {
     font-size: 1.2rem;
-    padding: 0.6rem;
+    padding-top: 1rem;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.2rem; }
-  footer .pagoycontacto {
-    font-weight: bold; }
-    footer .pagoycontacto ul {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 0.6rem; }
-      footer .pagoycontacto ul li {
-        list-style-type: none;
-        padding: 1rem; }
+  footer .pagoycontacto ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0.6rem; }
+    footer .pagoycontacto ul li {
+      list-style-type: none;
+      padding: 1rem; }
   footer .propietario {
     padding: 1rem 0;
     background-color: black;

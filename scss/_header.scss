@@ -5,9 +5,6 @@ header {
     top: 0px;
     z-index: 2;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     nav {
         div {
@@ -15,10 +12,7 @@ header {
                 .menu_logo {
                     font-size: $h2-fs;
                     text-transform: uppercase;
-                    text-decoration: none;
-                    color: $color-dark;
-                    margin: $mg-1;
-                    padding: $pd-1;
+                    margin: 0 1rem;
                     letter-spacing: 0.2rem;
                     transition: $transition-2;
                     &:hover {
@@ -27,50 +21,22 @@ header {
                 }
             }
             div {
-                .menu-list {
-                    list-style-type: none;
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
+                ul {
                     li {
-                        margin: $mg-1;
                         padding: $pd-1;
                         transition: $transition-2;
                         &:hover {
                             transform: scale(1.1, 1.1)
                         }
                         a {
-                            color: $color-dark;
-                            padding: $pd-1;
                             font-size: $fs-3;
-                            text-decoration: none;
                         }
-                    }
-                }
-                form {
-                    .search-fieldset {
-                        font-size: $fs-2;
-                        width: 10rem;
-                        margin: 0.5rem;
-                        padding: 0.5rem;
-                        border: solid $color-grey;
-                        color: $color-dark-2;
-                        background-color: $bg-light;
-                    }
-                    .search-btn {
-                        background-color: black;
-                        color: white;
-                        margin: 0.5rem;
-                        padding: 0.5rem;
-                        border: solid transparent;
-                        font-weight: bold;
-                        font-size: 1rem;
-                        transition: $transition-1;
-                        &:hover {
-                            transform: scale(1.1, 1.1);
-                            border: $color-dark;
-                            background-color: $bg-grey;
-                            color: $color-dark;
+                        ul {
+                            li {
+                                a {
+                                    font-size: 0.6rem;
+                                }
+                            }
                         }
                     }
                 }
@@ -78,3 +44,5 @@ header {
         }
     }
 }
+
+@import "queries";

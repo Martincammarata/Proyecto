@@ -13,17 +13,16 @@ footer {
             justify-content: center;
             align-items: center;
             padding: $pd-1;
-            margin: 1rem 0;
+            padding: 1rem;
             text-align: center;
             .newsltr-intro {
-                margin: 0.5rem;
                 font-size: $fs-2;
                 font-weight: bold;
             }
             .newsltr-fieldset {
                 font-size: $fs-2;
                 width: 20rem;
-                margin: 0.5rem;
+                margin: 1rem;
                 padding: 0.5rem;
                 border: solid $color-grey;
                 color: $color-dark-2;
@@ -33,8 +32,7 @@ footer {
             .newsltr-btn {
                 background-color: $bg-dark;
                 color: $color-light;
-                margin: 0.5rem;
-                padding: 1rem;
+                padding: 0.5rem;
                 border: solid transparent;
                 font-weight: bold;
                 font-size: $fs-2;
@@ -43,19 +41,18 @@ footer {
     }
     h2 {
         font-size: 1.2rem;
-        padding: $pd-1;
+        padding-top: 1rem;
         text-transform: uppercase;
         font-weight: bold;
         letter-spacing: 0.2rem;
     }
     .pagoycontacto {
-        font-weight: bold;
         ul {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
-            padding: $pd-1;
+            padding: 0 $pd-1;
             li {
                 list-style-type: none;
                 padding: 1rem;
