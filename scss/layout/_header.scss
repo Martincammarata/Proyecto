@@ -1,18 +1,19 @@
-@import "variables";
-header {
+@import "abstracts/variables";
+@import "abstracts/mixin";
+.container-menu {
     background-color: $bg-light;
     position: sticky;
     top: 0px;
     z-index: 2;
-    display: flex;
+    @include flex-row;
     justify-content: center;
-    nav {
+    .menu {
         div {
             a {
                 .menu_logo {
                     font-size: $h2-fs;
                     text-transform: uppercase;
-                    margin: 0 1rem;
+                    margin: 0 $mg-2;
                     letter-spacing: 0.2rem;
                     transition: $transition-2;
                     &:hover {
@@ -20,6 +21,7 @@ header {
                     }
                 }
             }
+            /*menu desplegable info*/
             div {
                 ul {
                     li {
@@ -34,7 +36,7 @@ header {
                         ul {
                             li {
                                 a {
-                                    font-size: 0.8rem;
+                                    font-size: $fs-1;
                                 }
                             }
                         }

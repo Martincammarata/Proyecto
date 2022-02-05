@@ -7,256 +7,285 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: white; }
 
-header {
+.container-menu {
   background-color: white;
   position: sticky;
   top: 0px;
   z-index: 2;
   display: flex;
+  flex-direction: row;
   justify-content: center; }
-  header nav div a .menu_logo {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    margin: 0 1rem;
-    letter-spacing: 0.2rem;
-    transition: all 1s ease; }
-    header nav div a .menu_logo:hover {
-      transform: scale(1.1, 1.1); }
-  header nav div div ul li {
-    padding: 0.6rem;
-    transition: all 1s ease; }
-    header nav div div ul li:hover {
-      transform: scale(1.1, 1.1); }
-    header nav div div ul li a {
-      font-size: 1.2rem; }
-    header nav div div ul li ul li a {
-      font-size: 0.8rem; }
+  .container-menu .menu div {
+    /*menu desplegable info*/ }
+    .container-menu .menu div a .menu_logo {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      margin: 0 1rem;
+      letter-spacing: 0.2rem;
+      transition: all 1s ease; }
+      .container-menu .menu div a .menu_logo:hover {
+        transform: scale(1.1, 1.1); }
+    .container-menu .menu div div ul li {
+      padding: 0.5rem;
+      transition: all 1s ease; }
+      .container-menu .menu div div ul li:hover {
+        transform: scale(1.1, 1.1); }
+      .container-menu .menu div div ul li a {
+        font-size: 1.2rem; }
+      .container-menu .menu div div ul li ul li a {
+        font-size: 0.8rem; }
 
-.mainindex h2 {
+/*se encuentra en page index*/
+.contenido-principal .contenido-principal_title {
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  margin: 1.2rem;
+  margin: 1rem;
   letter-spacing: 0.5rem; }
 
-.mainindex .inicioproductos {
+.contenido-principal .contenido-principal_carrousels {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly; }
 
-.mainproductos section nav {
-  padding-left: 2rem;
-  margin-top: 1rem; }
-  .mainproductos section nav ol li a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold; }
+/*se encuentra en page productos*/
+.container-productos {
+  /*Breadcrumb*/ }
+  .container-productos section nav {
+    padding-left: 2rem;
+    margin-top: 1rem; }
+    .container-productos section nav ol li a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold; }
+  .container-productos .productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    /*cards*/ }
+    .container-productos .productos article div .card-btn {
+      text-transform: uppercase;
+      transition: all 0.5s ease; }
+      .container-productos .productos article div .card-btn:hover {
+        transform: scale(1.1, 1.1); }
 
-.mainproductos .productos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  text-align: center; }
-  .mainproductos .productos article div .card-btn {
+/*se encuentra en page contacto*/
+.container-contact {
+  /*title*/ }
+  .container-contact section nav {
+    padding-left: 2rem;
+    margin-top: 1rem; }
+    .container-contact section nav ol li a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold; }
+  .container-contact .contact_title {
+    font-size: 2rem;
     text-transform: uppercase;
-    transition: all 0.5s ease; }
-    .mainproductos .productos article div .card-btn:hover {
-      transform: scale(1.1, 1.1); }
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    letter-spacing: 0.2rem; }
+  .container-contact .contact-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .container-contact .contact-info section ul {
+      margin: 1rem;
+      padding: 1rem; }
+      .container-contact .contact-info section ul li {
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        /*icons link*/ }
+        .container-contact .contact-info section ul li img {
+          padding-right: 0.5rem; }
+        .container-contact .contact-info section ul li a {
+          text-decoration: none;
+          color: black; }
+    .container-contact .contact-info section {
+      /*formulario de contacto*/ }
+      .container-contact .contact-info section .contact-form {
+        margin: 1rem;
+        padding: 1rem; }
+        .container-contact .contact-info section .contact-form div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          /*boton contactar*/ }
+          .container-contact .contact-info section .contact-form div .contact-form_btn {
+            background-color: black;
+            color: white;
+            margin: 0.5rem;
+            padding: 0 1.5rem;
+            border: solid transparent;
+            font-weight: bold;
+            font-size: 1rem;
+            line-height: 3rem; }
 
-.maincontacto section nav {
-  padding-left: 2rem;
-  margin-top: 1rem; }
-  .maincontacto section nav ol li a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold; }
-
-.maincontacto h1 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 1.2rem;
-  padding: 1.2rem;
-  letter-spacing: 0.2rem; }
-
-.maincontacto .contacto {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; }
-  .maincontacto .contacto section ul {
-    margin: 1.2rem;
-    padding: 1.2rem; }
-    .maincontacto .contacto section ul li {
-      margin: 1.2rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: start; }
-      .maincontacto .contacto section ul li img {
-        padding-right: 0.6rem; }
-      .maincontacto .contacto section ul li a {
+/*se encuentra en page preguntas*/
+.container-preguntas {
+  /*title*/ }
+  .container-preguntas section {
+    /*breadcrumb*/ }
+    .container-preguntas section nav {
+      padding-left: 2rem;
+      margin-top: 1rem; }
+      .container-preguntas section nav ol li a {
+        color: black;
         text-decoration: none;
-        color: black; }
-  .maincontacto .contacto section .form {
-    margin: 1.2rem;
-    padding: 1.2rem; }
-    .maincontacto .contacto section .form div {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .maincontacto .contacto section .form div .btn-form {
-        background-color: black;
-        color: white;
-        margin: 0.6rem;
-        padding: 0 1.8rem;
-        border: solid transparent;
-        font-weight: bold;
-        font-size: 1rem;
-        line-height: 3rem; }
+        font-weight: bold; }
+  .container-preguntas .preguntas_title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    padding: 1rem;
+    margin: 1rem; }
+  .container-preguntas .preguntas {
+    padding: 1rem;
+    margin: 1rem;
+    line-height: 2;
+    letter-spacing: 2px;
+    /*accordion*/ }
+    .container-preguntas .preguntas div {
+      padding: 0.5rem;
+      margin: 0.5rem;
+      /*respuesta*/ }
+      .container-preguntas .preguntas div section button {
+        z-index: 0;
+        /*pregunta*/ }
+        .container-preguntas .preguntas div section button h3 {
+          padding: 0 0.5rem;
+          font-size: 1.2rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: #aa75db; }
+      .container-preguntas .preguntas div div div div p {
+        font-size: 1.2rem; }
+      .container-preguntas .preguntas div div div div h4 {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        padding: 1rem;
+        margin: 1rem; }
+      .container-preguntas .preguntas div div div div ul li p {
+        font-size: 0.8rem; }
 
-.mainpreguntas section nav {
-  padding-left: 2rem;
-  margin-top: 1rem; }
-  .mainpreguntas section nav ol li a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold; }
-
-.mainpreguntas h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 0.2rem;
-  padding: 1.2rem;
-  margin: 1.2rem; }
-
-.mainpreguntas .preguntas {
-  padding: 1.2rem;
-  margin: 1.2rem;
-  line-height: 2;
-  letter-spacing: 2px; }
-  .mainpreguntas .preguntas div {
-    padding: 0.6rem;
-    margin: 0.6rem; }
-    .mainpreguntas .preguntas div section button {
-      z-index: 0; }
-      .mainpreguntas .preguntas div section button h3 {
-        padding: 0 0.5rem;
+/*se encuentra en page cambios*/
+.container-cambios {
+  /*title*/ }
+  .container-cambios section {
+    /*breadcrumb*/ }
+    .container-cambios section nav {
+      padding-left: 2rem;
+      margin-top: 1rem; }
+      .container-cambios section nav ol li a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold; }
+  .container-cambios .cambios_title {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem; }
+  .container-cambios .cambios {
+    font-size: 1rem;
+    line-height: 2;
+    letter-spacing: 2px;
+    padding: 1.5rem;
+    margin: 1.5rem; }
+    .container-cambios .cambios div {
+      padding: 0.5rem;
+      margin: 0.5rem;
+      /*pregunta*/
+      /*respuesta*/ }
+      .container-cambios .cambios div h3 {
         font-size: 1.2rem;
         font-weight: bold;
         text-transform: uppercase;
+        padding-bottom: 1rem;
         color: #aa75db; }
-    .mainpreguntas .preguntas div div div div p {
-      font-size: 1.2rem; }
-    .mainpreguntas .preguntas div div div div h4 {
-      font-size: 1rem;
-      text-transform: uppercase;
-      padding: 1.2rem;
-      margin: 1.2rem; }
-    .mainpreguntas .preguntas div div div div ul li p {
+      .container-cambios .cambios div p {
+        font-size: 1.2rem; }
+    .container-cambios .cambios ul li p {
       font-size: 0.8rem; }
 
-.maincambios section nav {
-  padding-left: 2rem;
-  margin-top: 1rem; }
-  .maincambios section nav ol li a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold; }
-
-.maincambios h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 1.2rem;
-  margin: 1.2rem; }
-
-.maincambios .cambios {
-  font-size: 1rem;
-  line-height: 2;
-  letter-spacing: 2px;
-  padding: 1.8rem;
-  margin: 1.8rem; }
-  .maincambios .cambios div {
-    padding: 0.6rem;
-    margin: 0.6rem; }
-    .maincambios .cambios div h3 {
-      font-size: 1.6rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      padding-bottom: 1.2rem;
-      color: #aa75db; }
-    .maincambios .cambios div p {
-      font-size: 1.2rem; }
-  .maincambios .cambios ul li p {
-    font-size: 0.8rem; }
-
-@media only screen and (max-width: 500px) {
-  header nav div a .menu_logo {
+@media only screen and (max-width: 992px) {
+  .container-menu .menu div a .menu_logo {
     transition: none; }
-    header nav div a .menu_logo:hover {
+    .container-menu .menu div a .menu_logo:hover {
       transform: none; }
-  header nav div div ul li {
+  .container-menu .menu div div ul li {
     transition: none; }
-    header nav div div ul li:hover {
+    .container-menu .menu div div ul li:hover {
       transform: none; } }
 
 footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  text-align: center; }
-  footer div .newsltr {
-    background-color: #e6e6e6;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0.6rem;
-    padding: 1rem;
-    text-align: center; }
-    footer div .newsltr .newsltr-intro {
-      font-size: 1rem;
-      font-weight: bold; }
-    footer div .newsltr .newsltr-fieldset {
-      font-size: 1rem;
-      width: 20rem;
-      margin: 1rem;
-      padding: 0.5rem;
-      border: solid #c4c4c4;
-      color: #333333;
-      background-color: white;
-      font-weight: bold; }
-    footer div .newsltr .newsltr-btn {
-      background-color: black;
-      color: white;
-      padding: 0.5rem;
-      border: solid transparent;
-      font-weight: bold;
-      font-size: 1rem; }
-  footer h2 {
+  text-align: center;
+  /*modalidades de pago*/
+  /*modalidad de contacto*/ }
+  footer .container-info {
+    /*form newleter*/ }
+    footer .container-info .info-newsltr {
+      background-color: #e6e6e6;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      text-align: center; }
+      footer .container-info .info-newsltr .newsltr_intro {
+        font-size: 1rem;
+        font-weight: bold; }
+      footer .container-info .info-newsltr .newsltr_fieldset {
+        font-size: 1rem;
+        width: 20rem;
+        margin: 1rem;
+        padding: 0.5rem;
+        border: solid #c4c4c4;
+        color: #333333;
+        background-color: white;
+        font-weight: bold; }
+      footer .container-info .info-newsltr .newsltr_btn {
+        background-color: black;
+        color: white;
+        padding: 0.5rem;
+        border: solid transparent;
+        font-weight: bold;
+        font-size: 1rem; }
+  footer .info_title {
     font-size: 1.2rem;
     padding-top: 1rem;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.2rem; }
-  footer .pagoycontacto ul {
+  footer .info-pagos ul, footer .info-contact ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0 0.6rem; }
-    footer .pagoycontacto ul li {
+    padding: 0 0.5rem;
+    /*icons link*/ }
+    footer .info-pagos ul li, footer .info-contact ul li {
       list-style-type: none;
       padding: 1rem; }
-  footer .propietario {
+  footer .info-contact {
+    /*icons link*/ }
+  footer .info-prop {
     padding: 1rem 0;
     background-color: black;
     color: white;

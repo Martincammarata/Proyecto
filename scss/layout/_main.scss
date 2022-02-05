@@ -1,6 +1,10 @@
-@import "variables";
-.mainindex {
-    h2 {
+@import "abstracts/variables";
+@import "abstracts/mixin";
+
+/*se encuentra en page index*/
+
+.contenido-principal {
+    .contenido-principal_title {
         text-transform: uppercase;
         text-align: center;
         font-size: $h2-fs;
@@ -8,7 +12,7 @@
         margin: $mg-2;
         letter-spacing: 0.5rem;
     }
-    .inicioproductos {
+    .contenido-principal_carrousels {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -16,11 +20,15 @@
     }
 }
 
-.mainproductos {
+
+/*se encuentra en page productos*/
+
+.container-productos {
+    /*Breadcrumb*/
     section {
         nav {
-            padding-left: 2rem;
-            margin-top: 1rem;
+            padding-left: $pd-2*2;
+            margin-top: $mg-2;
             ol {
                 li {
                     a {
@@ -33,11 +41,10 @@
         }
     }
     .productos {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        @include flex-row-wrap;
         justify-content: space-around;
         text-align: center;
+        /*cards*/
         article {
             div {
                 .card-btn {
@@ -52,11 +59,14 @@
     }
 }
 
-.maincontacto {
+
+/*se encuentra en page contacto*/
+
+.container-contact {
     section {
         nav {
-            padding-left: 2rem;
-            margin-top: 1rem;
+            padding-left: $pd-2*2;
+            margin-top: $mg-2;
             ol {
                 li {
                     a {
@@ -68,7 +78,8 @@
             }
         }
     }
-    h1 {
+    /*title*/
+    .contact_title {
         font-size: $h1-fs;
         text-transform: uppercase;
         text-align: center;
@@ -76,10 +87,8 @@
         padding: $pd-2;
         letter-spacing: 0.2rem;
     }
-    .contacto {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    .contact-info {
+        @include flex-row-wrap;
         justify-content: center;
         section {
             ul {
@@ -87,9 +96,9 @@
                 padding: $pd-2;
                 li {
                     margin: $mg-2;
-                    display: flex;
-                    flex-direction: row;
+                    @include flex-row;
                     justify-content: start;
+                    /*icons link*/
                     img {
                         padding-right: $pd-1;
                     }
@@ -101,21 +110,22 @@
             }
         }
         section {
-            .form {
+            /*formulario de contacto*/
+            .contact-form {
                 margin: $mg-2;
                 padding: $pd-2;
                 div {
-                    display: flex;
-                    flex-direction: column;
+                    @include flex-colum;
                     align-items: center;
-                    .btn-form {
+                    /*boton contactar*/
+                    .contact-form_btn {
                         background-color: black;
                         color: white;
-                        margin: 0.6rem;
-                        padding: 0 1.8rem;
+                        margin: $mg-1;
+                        padding: 0 $pd-3;
                         border: solid transparent;
                         font-weight: bold;
-                        font-size: 1rem;
+                        font-size: $fs-2;
                         line-height: 3rem;
                     }
                 }
@@ -124,11 +134,15 @@
     }
 }
 
-.mainpreguntas {
+
+/*se encuentra en page preguntas*/
+
+.container-preguntas {
     section {
+        /*breadcrumb*/
         nav {
-            padding-left: 2rem;
-            margin-top: 1rem;
+            padding-left: $pd-2*2;
+            margin-top: $mg-2;
             ol {
                 li {
                     a {
@@ -140,7 +154,8 @@
             }
         }
     }
-    h1 {
+    /*title*/
+    .preguntas_title {
         font-size: $h1-fs;
         font-weight: bold;
         text-transform: uppercase;
@@ -154,21 +169,24 @@
         margin: $mg-2;
         line-height: 2;
         letter-spacing: 2px;
+        /*accordion*/
         div {
             padding: $pd-1;
             margin: $mg-1;
             section {
                 button {
                     z-index: 0;
+                    /*pregunta*/
                     h3 {
-                        padding: 0 0.5rem;
-                        font-size: 1.2rem;
+                        padding: 0 $pd-1;
+                        font-size: $h3-fs;
                         font-weight: bold;
                         text-transform: uppercase;
                         color: $color-violet;
                     }
                 }
             }
+            /*respuesta*/
             div {
                 div {
                     div {
@@ -176,7 +194,7 @@
                             font-size: $fs-3;
                         }
                         h4 {
-                            font-size: 1rem;
+                            font-size: $h4-fs;
                             text-transform: uppercase;
                             padding: $pd-2;
                             margin: $mg-2;
@@ -195,11 +213,15 @@
     }
 }
 
-.maincambios {
+
+/*se encuentra en page cambios*/
+
+.container-cambios {
     section {
+        /*breadcrumb*/
         nav {
-            padding-left: 2rem;
-            margin-top: 1rem;
+            padding-left: $mg-2*2;
+            margin-top: $mg-2;
             ol {
                 li {
                     a {
@@ -211,7 +233,8 @@
             }
         }
     }
-    h1 {
+    /*title*/
+    .cambios_title {
         font-size: $h1-fs;
         font-weight: bold;
         letter-spacing: 0.2rem;
@@ -229,6 +252,7 @@
         div {
             padding: $pd-1;
             margin: $mg-1;
+            /*pregunta*/
             h3 {
                 font-size: $h3-fs;
                 font-weight: bold;
@@ -236,6 +260,7 @@
                 padding-bottom: $pd-2;
                 color: $color-violet;
             }
+            /*respuesta*/
             p {
                 font-size: $fs-3;
             }
@@ -250,4 +275,4 @@
     }
 }
 
-@import "queries";
+@import "abstracts/queries";

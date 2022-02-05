@@ -5,186 +5,201 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--icono de pagina-->
     <link rel="shortcut icon" href="../media/fotos/blaze-32x32.svg">
+    <!--libreria animate css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--bootstrap5-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilo.css">
     <!--google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <!--mi css-->
+    <link rel="stylesheet" href="../css/estilo.css">
     <title>Blaze official | Cambios</title>
 </head>
 
 <body class="animate__animated animate__fadeIn">
-    <div class="contenedor-grid">
-        <header class="header-grid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <header class="container-menu">
+        <!--menu-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light menu">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand" href="../index.html">
-                        <h1 class="menu_logo">
-                            Blaze official
-                        </h1>
-                    </a>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                        <ul class="menu-list navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./productos.html">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contacto.html">Contacto</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-current="page" aria-expanded="false">
-                                        Info
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li>
-                                        <a class="dropdown-item" href="./preguntas.html">
+                <a class="navbar-brand" href="../index.html">
+                    <h1 class="menu_logo">
+                        Blaze official
+                    </h1>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="menu-list navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <!--menu desplegable, pages preguntas y cambios-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-current="page" aria-expanded="false">
+                                Info
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="./preguntas.html">
                                             # Preguntas frecuentes
                                         </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="./cambios.html">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./cambios.html">
                                             # Modalidad de cambios
                                         </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container-cambios">
+        <section>
+            <!--breadcrumb-->
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">#Preguntas frecuentes</li>
+                </ol>
             </nav>
-        </header>
-        <main class="maincambios main-grid">
-            <section>
-                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">#Preguntas frecuentes</li>
-                    </ol>
-                </nav>
-            </section>
-            <h1>
-                # Modalidad de cambios
-            </h1>
-            <section class="cambios">
-                <div>
-                    <h3>
-                        ¿Realizan cambios?
-                    </h3>
-                    <p>
-                        Si, realizamos cambios.
-                    </p>
-                </div>
-                <ul>
-                    <li>
-                        <p>
-                            Podrás cambiar tu prenda una única vez, ya sea por talle o por el mismo monto en otras prendas.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            El cambio será vigente si se avisa dentro de los 3 días posteriores de la obtención de dicho producto. Luego de ese período, no se podrá exigir el cambio.
-                        </p>
-                    </li>
-                    <li>
-                        <P>
-                            Lógicamente la prenda que cambias, tiene que estar sin uso y en las mismas condiciones que se vendió, si no, no se aceptará la opción de cambio.
-                        </P>
-                    </li>
-                    <li>
-                        <p>
-                            Tendrán 15 días para efectuar su cambio a partir de la fecha en la que se realizó la compra. Luego de este período, no se aceptará ningún cambio.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Los productos en SALE no tienen cambio.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            No se realiza devolución de dinero, únicamente en algún caso excepcional por fallas.
-                        </p>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <footer class="footer-grid">
+        </section>
+        <!--title-->
+        <h1 class="cambios_title">
+            # Modalidad de cambios
+        </h1>
+        <section class="cambios">
             <div>
-                <form class="newsltr" action="#">
-                    <label class="newsltr-intro" for="email">
+                <!--pregunta-->
+                <h3>
+                    ¿Realizan cambios?
+                </h3>
+                <!--respuesta-->
+                <p>
+                    Si, realizamos cambios.
+                </p>
+            </div>
+            <ul>
+                <li>
+                    <p>
+                        Podrás cambiar tu prenda una única vez, ya sea por talle o por el mismo monto en otras prendas.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        El cambio será vigente si se avisa dentro de los 3 días posteriores de la obtención de dicho producto. Luego de ese período, no se podrá exigir el cambio.
+                    </p>
+                </li>
+                <li>
+                    <P>
+                        Lógicamente la prenda que cambias, tiene que estar sin uso y en las mismas condiciones que se vendió, si no, no se aceptará la opción de cambio.
+                    </P>
+                </li>
+                <li>
+                    <p>
+                        Tendrán 15 días para efectuar su cambio a partir de la fecha en la que se realizó la compra. Luego de este período, no se aceptará ningún cambio.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Los productos en SALE no tienen cambio.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        No se realiza devolución de dinero, únicamente en algún caso excepcional por fallas.
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <!--comienza el footer-->
+    <footer>
+        <div class="container-info">
+            <!--form newsletter-->
+            <form class="info-newsltr" action="#">
+                <label class="newsltr_intro" for="email">
                         Déjanos tu mail para recibir novedades
                     <label>
-                    <input class="newsltr-fieldset rounded" type="email" name="email" placeholder="Tu email">
-                    <input class="newsltr-btn rounded" type="submit" value="Enviar">
-                </form>
-            </div>
-            <h2>
-                    Medios de pago
-            </h2>
-            <div class="pagoycontacto">
-                <ul>
-                    <li>
-                        <img src="../media/fotos/pagos/mercadopago.svg" alt="Mercadopago">
-                    </li>
-                    <li>
-                        <img src="../media/fotos/pagos/deposito.svg" alt="Deposito">
-                    </li>
-                    <li>
-                        <img src="../media/fotos/pagos/visa.svg" alt="Visa">
-                    </li>
-                    <li>
-                        <img src="../media/fotos/pagos/mastercard.svg" alt="Mastercard">
-                    </li>
-                    <li>
-                        <img src="../media/fotos/pagos/pagofacil.svg" alt="Pagofacil">
-                    </li>
-                    <li>
-                        <img src="../media/fotos/pagos/rapipago.svg" alt="Rapipago">
-                    </li>
-                    <li>
-                        <img src="../media/fotos/pagos/efectivo.svg" alt="Efectivo">
-                    </li>
-                </ul>
-            </div>
-            <h2>
-                Contacto
-            </h2>
-            <div class="pagoycontacto">
-                <ul>
-                    <li>
-                        <a href="mailto:blazeofficialok@gmail.com" target="_black">
-                            <img src="../media/fotos/contacto/gmail-32x32.svg" alt="correo">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="
-                        https://wa.me/+541173649893
-                        " target="_black"><img src="../media/fotos/contacto/whatsapp-32x32.svg" alt="whastapp"></a>
-                    </li>
-                    <li>
-                        <a class="facebook" href="https://facebook.com/Blazeofficialok" target="_black"> <img src="../media/fotos/contacto/facebook-32x32.svg" alt="facebook"></a>
-                    </li>
-                    <li>
-                        <a class="instagram" href="https://www.instagram.com/blazeofficialok/" target="_black"> <img src="../media/fotos/contacto/instagram-32x32.svg" alt="instagram"></a>
-                    </li>
-                </ul>
-            </div>
-            <p class="propietario">
-                Creado por Martín Cammarata
-            </p>
-        </footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous">
-    </script>
+                    <input class="newsltr_fieldset rounded" type="email" name="email" placeholder="Tu email">
+                    <input class="newsltr_btn rounded" type="submit" value="Enviar">
+            </form>
+        </div>
+        <!--title-->
+        <h3 class="info_title">
+            Medios de pago
+        </h3>
+        <!--icons formas de pago-->
+        <div class="info-pagos">
+            <ul>
+                <li>
+                    <img src="../media/fotos/pagos/mercadopago.svg" alt="Mercadopago">
+                </li>
+                <li>
+                    <img src="../media/fotos/pagos/deposito.svg" alt="Deposito">
+                </li>
+                <li>
+                    <img src="../media/fotos/pagos/visa.svg" alt="Visa">
+                </li>
+                <li>
+                    <img src="../media/fotos/pagos/mastercard.svg" alt="Mastercard">
+                </li>
+                <li>
+                    <img src="../media/fotos/pagos/pagofacil.svg" alt="Pagofacil">
+                </li>
+                <li>
+                    <img src="../media/fotos/pagos/rapipago.svg" alt="Rapipago">
+                </li>
+                <li>
+                    <img src="../media/fotos/pagos/efectivo.svg" alt="Efectivo">
+                </li>
+            </ul>
+        </div>
+        <!--title-->
+        <h3 class="info_title">
+            Contacto
+        </h3>
+        <!--icons contacto-->
+        <div class="info-contact">
+            <ul>
+                <li>
+                    <a href="mailto:blazeofficialok@gmail.com" target="_black">
+                        <img src="../media/fotos/contacto/gmail-32x32.svg" alt="correo">
+                    </a>
+                </li>
+                <li>
+                    <a href="
+                    https://wa.me/+541173649893
+                    " target="_black"><img src="../media/fotos/contacto/whatsapp-32x32.svg" alt="whastapp"></a>
+                </li>
+                <li>
+                    <a class="facebook" href="https://facebook.com/Blazeofficialok" target="_black"> <img src="../media/fotos/contacto/facebook-32x32.svg" alt="facebook"></a>
+                </li>
+                <li>
+                    <a class="instagram" href="https://www.instagram.com/blazeofficialok/" target="_black"> <img src="../media/fotos/contacto/instagram-32x32.svg" alt="instagram"></a>
+                </li>
+            </ul>
+        </div>
+        <!--nombre de propietario-->
+        <p class="info-prop">
+            Creado por Martín Cammarata
+        </p>
+    </footer>
+    <!--script bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>

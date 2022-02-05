@@ -1,66 +1,69 @@
-@import "variables";
+@import "abstracts/variables";
+@import "abstracts/mixin";
 footer {
-    display: flex;
-    flex-direction: column;
+    @include flex-colum;
     justify-content: space-around;
     text-align: center;
-    div {
-        .newsltr {
+    .container-info {
+        /*form newleter*/
+        .info-newsltr {
             background-color: $bg-grey;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            @include flex-row-wrap;
             justify-content: center;
             align-items: center;
-            padding: $pd-1;
-            padding: 1rem;
+            padding: $pd-2;
             text-align: center;
-            .newsltr-intro {
+            .newsltr_intro {
                 font-size: $fs-2;
                 font-weight: bold;
             }
-            .newsltr-fieldset {
+            .newsltr_fieldset {
                 font-size: $fs-2;
                 width: 20rem;
-                margin: 1rem;
-                padding: 0.5rem;
+                margin: $mg-2;
+                padding: $pd-1;
                 border: solid $color-grey;
                 color: $color-dark-2;
                 background-color: $bg-light;
                 font-weight: bold;
             }
-            .newsltr-btn {
+            .newsltr_btn {
                 background-color: $bg-dark;
                 color: $color-light;
-                padding: 0.5rem;
+                padding: $pd-1;
                 border: solid transparent;
                 font-weight: bold;
                 font-size: $fs-2;
             }
         }
     }
-    h2 {
-        font-size: 1.2rem;
-        padding-top: 1rem;
+    /*modalidades de pago*/
+    .info_title {
+        font-size: $h3-fs;
+        padding-top: $pd-2;
         text-transform: uppercase;
         font-weight: bold;
         letter-spacing: 0.2rem;
     }
-    .pagoycontacto {
+    .info-pagos {
         ul {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            @include flex-row-wrap;
             justify-content: center;
             padding: 0 $pd-1;
+            /*icons link*/
             li {
                 list-style-type: none;
                 padding: 1rem;
             }
         }
     }
-    .propietario {
-        padding: 1rem 0;
+    /*modalidad de contacto*/
+    .info-contact {
+        /*icons link*/
+        @extend .info-pagos;
+    }
+    .info-prop {
+        padding: $pd-2 0;
         background-color: $bg-dark;
         color: $color-light;
         font-size: $fs-3;
