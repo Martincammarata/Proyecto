@@ -62,14 +62,14 @@
                         ul {
                             li {
                                 a {
-                                    padding: 0.75rem 1.5rem;
-                                    font-size: 1.25rem;
+                                    padding: $pd-1 $pd-3;
+                                    font-size: $fs-3;
                                     font-weight: bold;
-                                    border: 1px solid #dee2e6;
+                                    border: 1px solid #e9ecef;
                                     border-radius: 0.3rem;
                                     text-decoration: none;
-                                    background-color: white;
-                                    color: black;
+                                    background-color: $bg-light;
+                                    color: $color-dark;
                                     position: relative;
                                     display: block;
                                     transition: color .15s;
@@ -83,14 +83,14 @@
                             }
                             li {
                                 span {
-                                    padding: 0.75rem 1.5rem;
-                                    font-size: 1.25rem;
+                                    padding: $pd-1 $pd-3;
+                                    font-size: $fs-3;
                                     font-weight: bold;
-                                    border: 1px solid #dee2e6;
+                                    border: 1px solid $color-grey;
                                     border-radius: 0.3rem;
                                     text-decoration: none;
-                                    background-color: black;
-                                    color: white;
+                                    background-color: $bg-dark;
+                                    color: $color-light;
                                     position: relative;
                                     display: block;
                                     transition: color .15s;
