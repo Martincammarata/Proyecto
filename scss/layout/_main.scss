@@ -1,203 +1,300 @@
-@import "abstracts/variables";
-@import "abstracts/mixin";
-
-/*se encuentra en page index*/
-
-.contenido-principal {
-    .contenido-principal_title {
-        text-transform: uppercase;
-        text-align: center;
-        font-size: $h2-fs;
-        font-weight: bold;
-        margin: $mg-2;
-        letter-spacing: 0.5rem;
-    }
-    .contenido-principal_carrousels {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-}
-
-
-/*se encuentra en page productos*/
-
-.container-productos {
-    /*Breadcrumb*/
-    section {
-        nav {
-            padding-left: $pd-2*2;
-            margin-top: $mg-2;
-            ol {
-                li {
-                    a {
-                        color: $color-dark;
-                        text-decoration: none;
+                @import "abstracts/variables";
+                @import "abstracts/mixin";
+                /*se encuentra en page index*/
+                
+                .contenido-principal {
+                    .contenido-principal_title {
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-size: $h2-fs;
                         font-weight: bold;
+                        margin: $mg-2;
+                        letter-spacing: 0.5rem;
+                    }
+                    .contenido-principal_carrousels {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
                     }
                 }
-            }
-        }
-    }
-    .productos {
-        @include flex-row-wrap;
-        justify-content: space-around;
-        text-align: center;
-        /*cards*/
-        article {
-            div {
-                .card-btn {
-                    text-transform: uppercase;
-                    transition: $transition-1;
-                    &:hover {
-                        transform: scale(1.1, 1.1)
+                /*se encuentra en page productos*/
+                
+                .container-productos {
+                    /*Breadcrumb*/
+                    section {
+                        nav {
+                            padding-left: $pd-2*2;
+                            margin-top: $mg-2;
+                            ol {
+                                li {
+                                    a {
+                                        color: $color-dark;
+                                        text-decoration: none;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .productos {
+                        @include flex-row-wrap;
+                        justify-content: space-around;
+                        text-align: center;
+                        /*cards*/
+                        article {
+                            div {
+                                .card-btn {
+                                    text-transform: uppercase;
+                                    transition: $transition-1;
+                                    &:hover {
+                                        transform: scale(1.1, 1.1)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    nav {
+                        ul {
+                            li {
+                                a {
+                                    padding: 0.75rem 1.5rem;
+                                    font-size: 1.25rem;
+                                    font-weight: bold;
+                                    border: 1px solid #dee2e6;
+                                    border-radius: 0.3rem;
+                                    text-decoration: none;
+                                    background-color: white;
+                                    color: black;
+                                    position: relative;
+                                    display: block;
+                                    transition: color .15s;
+                                    &:hover {
+                                        z-index: 2;
+                                        color: #0a58ca;
+                                        background-color: #e9ecef;
+                                        border-color: #dee2e6;
+                                    }
+                                }
+                            }
+                            li {
+                                span {
+                                    padding: 0.75rem 1.5rem;
+                                    font-size: 1.25rem;
+                                    font-weight: bold;
+                                    border: 1px solid #dee2e6;
+                                    border-radius: 0.3rem;
+                                    text-decoration: none;
+                                    background-color: black;
+                                    color: white;
+                                    position: relative;
+                                    display: block;
+                                    transition: color .15s;
+                                }
+                            }
+                        }
                     }
                 }
-            }
-        }
-    }
-}
-
-
-/*se encuentra en page contacto*/
-
-.container-contact {
-    section {
-        nav {
-            padding-left: $pd-2*2;
-            margin-top: $mg-2;
-            ol {
-                li {
-                    a {
-                        color: $color-dark;
-                        text-decoration: none;
-                        font-weight: bold;
+                /*se encuentra en page contacto*/
+                
+                .container-contact {
+                    section {
+                        nav {
+                            padding-left: $pd-2*2;
+                            margin-top: $mg-2;
+                            ol {
+                                li {
+                                    a {
+                                        color: $color-dark;
+                                        text-decoration: none;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    /*title*/
+                    .contact_title {
+                        font-size: $h1-fs;
+                        text-transform: uppercase;
+                        text-align: center;
+                        margin: $mg-2;
+                        padding: $pd-2;
+                        letter-spacing: 0.2rem;
+                    }
+                    .contact-info {
+                        @include flex-row-wrap;
+                        justify-content: center;
+                        section {
+                            ul {
+                                margin: $mg-2;
+                                padding: $pd-2;
+                                li {
+                                    margin: $mg-2;
+                                    @include flex-row;
+                                    justify-content: start;
+                                    /*icons link*/
+                                    img {
+                                        padding-right: $pd-1;
+                                    }
+                                    a {
+                                        text-decoration: none;
+                                        color: $color-dark;
+                                    }
+                                }
+                            }
+                        }
+                        section {
+                            /*formulario de contacto*/
+                            .contact-form {
+                                margin: $mg-2;
+                                padding: $pd-2;
+                                div {
+                                    @include flex-colum;
+                                    align-items: center;
+                                    /*boton contactar*/
+                                    .contact-form_btn {
+                                        background-color: black;
+                                        color: white;
+                                        margin: $mg-1;
+                                        padding: 0 $pd-3;
+                                        border: solid transparent;
+                                        font-weight: bold;
+                                        font-size: $fs-2;
+                                        line-height: 3rem;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
-            }
-        }
-    }
-    /*title*/
-    .contact_title {
-        font-size: $h1-fs;
-        text-transform: uppercase;
-        text-align: center;
-        margin: $mg-2;
-        padding: $pd-2;
-        letter-spacing: 0.2rem;
-    }
-    .contact-info {
-        @include flex-row-wrap;
-        justify-content: center;
-        section {
-            ul {
-                margin: $mg-2;
-                padding: $pd-2;
-                li {
-                    margin: $mg-2;
-                    @include flex-row;
-                    justify-content: start;
-                    /*icons link*/
-                    img {
-                        padding-right: $pd-1;
+                /*se encuentra en page preguntas*/
+                
+                .container-preguntas {
+                    section {
+                        /*breadcrumb*/
+                        nav {
+                            padding-left: $pd-2*2;
+                            margin-top: $mg-2;
+                            ol {
+                                li {
+                                    a {
+                                        color: $color-dark;
+                                        text-decoration: none;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
                     }
-                    a {
-                        text-decoration: none;
-                        color: $color-dark;
-                    }
-                }
-            }
-        }
-        section {
-            /*formulario de contacto*/
-            .contact-form {
-                margin: $mg-2;
-                padding: $pd-2;
-                div {
-                    @include flex-colum;
-                    align-items: center;
-                    /*boton contactar*/
-                    .contact-form_btn {
-                        background-color: black;
-                        color: white;
-                        margin: $mg-1;
-                        padding: 0 $pd-3;
-                        border: solid transparent;
-                        font-weight: bold;
-                        font-size: $fs-2;
-                        line-height: 3rem;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-/*se encuentra en page preguntas*/
-
-.container-preguntas {
-    section {
-        /*breadcrumb*/
-        nav {
-            padding-left: $pd-2*2;
-            margin-top: $mg-2;
-            ol {
-                li {
-                    a {
-                        color: $color-dark;
-                        text-decoration: none;
-                        font-weight: bold;
-                    }
-                }
-            }
-        }
-    }
-    /*title*/
-    .preguntas_title {
-        font-size: $h1-fs;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
-        letter-spacing: 0.2rem;
-        padding: $pd-2;
-        margin: $mg-2;
-    }
-    .preguntas {
-        padding: $pd-2;
-        margin: $mg-2;
-        line-height: 2;
-        letter-spacing: 2px;
-        /*accordion*/
-        div {
-            padding: $pd-1;
-            margin: $mg-1;
-            section {
-                button {
-                    z-index: 0;
-                    /*pregunta*/
-                    h3 {
-                        padding: 0 $pd-1;
-                        font-size: $h3-fs;
+                    /*title*/
+                    .preguntas_title {
+                        font-size: $h1-fs;
                         font-weight: bold;
                         text-transform: uppercase;
-                        color: $color-violet;
+                        text-align: center;
+                        letter-spacing: 0.2rem;
+                        padding: $pd-2;
+                        margin: $mg-2;
+                    }
+                    .preguntas {
+                        padding: $pd-2;
+                        margin: $mg-2;
+                        line-height: 2;
+                        letter-spacing: 2px;
+                        /*accordion*/
+                        div {
+                            padding: $pd-1;
+                            margin: $mg-1;
+                            section {
+                                button {
+                                    z-index: 0;
+                                    /*pregunta*/
+                                    h3 {
+                                        padding: 0 $pd-1;
+                                        font-size: $h3-fs;
+                                        font-weight: bold;
+                                        text-transform: uppercase;
+                                        color: $color-violet;
+                                    }
+                                }
+                            }
+                            /*respuesta*/
+                            div {
+                                div {
+                                    div {
+                                        p {
+                                            font-size: $fs-3;
+                                        }
+                                        h4 {
+                                            font-size: $h4-fs;
+                                            text-transform: uppercase;
+                                            padding: $pd-2;
+                                            margin: $mg-2;
+                                        }
+                                        ul {
+                                            li {
+                                                p {
+                                                    font-size: $fs-1;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
-            }
-            /*respuesta*/
-            div {
-                div {
-                    div {
-                        p {
-                            font-size: $fs-3;
+                /*se encuentra en page cambios*/
+                
+                .container-cambios {
+                    section {
+                        /*breadcrumb*/
+                        nav {
+                            padding-left: $mg-2*2;
+                            margin-top: $mg-2;
+                            ol {
+                                li {
+                                    a {
+                                        color: $color-dark;
+                                        text-decoration: none;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
                         }
-                        h4 {
-                            font-size: $h4-fs;
-                            text-transform: uppercase;
-                            padding: $pd-2;
-                            margin: $mg-2;
+                    }
+                    /*title*/
+                    .cambios_title {
+                        font-size: $h1-fs;
+                        font-weight: bold;
+                        letter-spacing: 0.2rem;
+                        text-transform: uppercase;
+                        text-align: center;
+                        padding: $pd-2;
+                        margin: $mg-2;
+                    }
+                    .cambios {
+                        font-size: $fs-2;
+                        line-height: 2;
+                        letter-spacing: 2px;
+                        padding: $pd-3;
+                        margin: $mg-3;
+                        div {
+                            padding: $pd-1;
+                            margin: $mg-1;
+                            /*pregunta*/
+                            h3 {
+                                font-size: $h3-fs;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                                padding-bottom: $pd-2;
+                                color: $color-violet;
+                            }
+                            /*respuesta*/
+                            p {
+                                font-size: $fs-3;
+                            }
                         }
                         ul {
                             li {
@@ -208,71 +305,5 @@
                         }
                     }
                 }
-            }
-        }
-    }
-}
-
-
-/*se encuentra en page cambios*/
-
-.container-cambios {
-    section {
-        /*breadcrumb*/
-        nav {
-            padding-left: $mg-2*2;
-            margin-top: $mg-2;
-            ol {
-                li {
-                    a {
-                        color: $color-dark;
-                        text-decoration: none;
-                        font-weight: bold;
-                    }
-                }
-            }
-        }
-    }
-    /*title*/
-    .cambios_title {
-        font-size: $h1-fs;
-        font-weight: bold;
-        letter-spacing: 0.2rem;
-        text-transform: uppercase;
-        text-align: center;
-        padding: $pd-2;
-        margin: $mg-2;
-    }
-    .cambios {
-        font-size: $fs-2;
-        line-height: 2;
-        letter-spacing: 2px;
-        padding: $pd-3;
-        margin: $mg-3;
-        div {
-            padding: $pd-1;
-            margin: $mg-1;
-            /*pregunta*/
-            h3 {
-                font-size: $h3-fs;
-                font-weight: bold;
-                text-transform: uppercase;
-                padding-bottom: $pd-2;
-                color: $color-violet;
-            }
-            /*respuesta*/
-            p {
-                font-size: $fs-3;
-            }
-        }
-        ul {
-            li {
-                p {
-                    font-size: $fs-1;
-                }
-            }
-        }
-    }
-}
-
-@import "abstracts/queries";
+                
+                @import "abstracts/queries";

@@ -72,6 +72,35 @@ body {
       transition: all 0.5s ease; }
       .container-productos .productos article div .card-btn:hover {
         transform: scale(1.1, 1.1); }
+  .container-productos nav ul li a {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: 1px solid #dee2e6;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    position: relative;
+    display: block;
+    transition: color .15s; }
+    .container-productos nav ul li a:hover {
+      z-index: 2;
+      color: #0a58ca;
+      background-color: #e9ecef;
+      border-color: #dee2e6; }
+  .container-productos nav ul li span {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: 1px solid #dee2e6;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    position: relative;
+    display: block;
+    transition: color .15s; }
 
 /*se encuentra en page contacto*/
 .container-contact {
