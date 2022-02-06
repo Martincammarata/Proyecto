@@ -41,9 +41,12 @@
                         @include flex-row-wrap;
                         justify-content: space-around;
                         text-align: center;
-                        /*cards*/
                         article {
+                            /*cards*/
                             div {
+                                .card.price {
+                                    font-weight: bold;
+                                }
                                 .card-btn {
                                     text-transform: uppercase;
                                     transition: $transition-1;
@@ -54,6 +57,7 @@
                             }
                         }
                     }
+                    /*pagination*/
                     nav {
                         ul {
                             li {

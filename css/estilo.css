@@ -52,7 +52,8 @@ body {
 
 /*se encuentra en page productos*/
 .container-productos {
-  /*Breadcrumb*/ }
+  /*Breadcrumb*/
+  /*pagination*/ }
   .container-productos section nav {
     padding-left: 2rem;
     margin-top: 1rem; }
@@ -65,13 +66,16 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    text-align: center;
-    /*cards*/ }
-    .container-productos .productos article div .card-btn {
-      text-transform: uppercase;
-      transition: all 0.5s ease; }
-      .container-productos .productos article div .card-btn:hover {
-        transform: scale(1.1, 1.1); }
+    text-align: center; }
+    .container-productos .productos article {
+      /*cards*/ }
+      .container-productos .productos article div .card.price {
+        font-weight: bold; }
+      .container-productos .productos article div .card-btn {
+        text-transform: uppercase;
+        transition: all 0.5s ease; }
+        .container-productos .productos article div .card-btn:hover {
+          transform: scale(1.1, 1.1); }
   .container-productos nav ul li a {
     padding: 0.75rem 1.5rem;
     font-size: 1.25rem;
