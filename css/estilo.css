@@ -69,7 +69,7 @@ body {
     text-align: center; }
     .container-productos .productos article {
       /*cards*/ }
-      .container-productos .productos article div .card.price {
+      .container-productos .productos article div .card-price {
         font-weight: bold; }
       .container-productos .productos article div .card-btn {
         text-transform: uppercase;
